@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>餐廳網站</title>
+  <style>
+    body {
+      font-family: 'Georgia', serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background-color: #fdfaf5;
+      color: #333;
+    }
+
+    header {
+      background: #2c2c2c;
+      color: #d4af37;
+      padding: 1.5rem 0;
+      text-align: center;
+      font-size: 1.8rem;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background: #1f1f1f;
+      padding: 1rem 0;
+    }
+
+    nav a {
+      color: #d4af37;
+      margin: 0 1.5rem;
+      text-decoration: none;
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+      color: #e8c46c;
+    }
+
+    section {
+      padding: 2.5rem;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .hero {
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url('https://images.chinatimes.com/newsphoto/2020-07-04/1024/20200704002641.jpg') no-repeat center center/cover;
+      color: #fff;
+      padding: 5rem 2rem;
+      text-align: center;
+    }
+
+    .hero h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      letter-spacing: 0.1rem;
+    }
+
+    .menu {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+    }
+
+    .menu-item {
+      flex: 1 1 calc(33.333% - 1.5rem);
+      background: #fff5e4;
+      padding: 1.5rem;
+      border: 1px solid #d4af37;
+      text-align: center;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #2c2c2c;
+      color: #d4af37;
+    }
+
+    .container1 {
+      background: #f5f0e6;
+      padding: 2.5rem 0;
+    }
+
+    .container2 {
+      background: #e6dcd3;
+      padding: 2.5rem 0;
+    }
+
+    /* 表單 */
+    #reservation {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: #fff;
+      padding: 2.5rem;
+      border-radius: 15px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+      margin: 2.5rem auto;
+      max-width: 600px;
+    }
+
+    #reservation label {
+      font-weight: bold;
+      color: #2c2c2c;
+    }
+
+    #reservation input,
+    #reservation button {
+      padding: 1rem;
+      font-size: 1.1rem;
+      border: 1px solid #d4af37;
+      border-radius: 8px;
+    }
+
+    #reservation input:focus {
+      border-color: #d4af37;
+      outline: none;
+      box-shadow: 0 0 8px rgba(212, 175, 55, 0.5);
+    }
+
+    #reservation button {
+      background: #d4af37;
+      color: #2c2c2c;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      font-weight: bold;
+    }
+
+    #reservation button:hover {
+      background: #e8c46c;
+    }
+
+    /* 回頂端按鈕 */
+    #back-to-top {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      width: 50px;
+      height: 50px;
+      background: #d4af37;
+      color: white;
+      font-size: 24px;
+      text-align: center;
+      line-height: 50px;
+      border-radius: 50%;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      display: none;
+      transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+
+    #back-to-top:hover {
+      background: #e8c46c;
+      transform: scale(1.1);
+    }
+
+    #back-to-top.show {
+      display: block;
+      opacity: 1;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .menu-item {
+      text-align: center;
+      padding: 10px;
+      border: 1px solid #d4af37;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .menu-item img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    .menu-item h3 {
+      margin: 10px 0 5px;
+      color: #333;
+    }
+
+    .menu-item p {
+      margin: 0;
+      color: #666;
+    }
+    .more-info 
+     {
+    margin-top: 10px;
+  }
+
+  .more-info a {
+    display: inline-block;
+    text-decoration: none;
+    color: #d4af37;
+    font-weight: bold;
+    border: 2px solid #d4af37;
+    border-radius: 5px;
+    padding: 5px 15px;
+    transition: all 0.3s ease;
+  }
+
+  .more-info a:hover {
+    background-color: #d4af37;
+    color: #fff;
+  }
+  </style>
+</head>
+
+<body>
+  <div id="back-to-top">&#8679;</div>
+  <header>
+    <h1>歡迎來到美食天堂</h1>
+    <p>品味幸福的每一刻</p>
+  </header>
+
+  <nav>
+    <a href="#about">關於我們</a>
+    <a href="#menu">菜單</a>
+    <a href="#reservation">訂位</a>
+    <a href="#contact">聯絡我們</a>
+  </nav>
+
+  <div class="container1">
+    <section class="hero">
+      <h1>美味佳餚，難忘時刻</h1>
+      <p>來享受城中最棒的用餐體驗！</p>
+    </section>
+  </div>
+
+  <div class="container2">
+    <section id="about">
+      <h2>關於我們</h2>
+      <p>在美食天堂，我們將最新鮮的食材與創意食譜結合，為您帶來難忘的用餐體驗。</p>
+      <p>自 2010 年成立以來，我們始終熱愛美食並提供卓越的服務。</p>
+      <div class="more-info">
+        <a href="http://">點我了解更多....</a>
+      </div>
+    </section>
+  </div>
+
+  <div class="container1">
+    <section id="menu">
+      <h2>菜單</h2>
+      <div class="menu">
+        <div class="menu-item">
+          <img
+            src="https://anyong-life-bucket.storage.googleapis.com/wp-content/uploads/2020/08/%E6%8C%AA%E5%A8%81%E9%AE%AD%E9%AD%9A%E8%BC%AA%E5%88%87-%E9%AE%AD%E9%AD%9A%E6%96%99%E7%90%86-600-500x500.jpg"
+            alt="香煎鮭魚">
+          <h3>香煎鮭魚</h3>
+          <p>NT$600</p>
+        </div>
+        <div class="menu-item">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLlNxaUdyYBlY-TmrirWF0nOeJJmo7b6WIMg&s"
+            alt="經典凱撒沙拉">
+          <h3>經典凱撒沙拉</h3>
+          <p>NT$360</p>
+        </div>
+        <div class="menu-item">
+          <img
+            src="https://assets.tmecosys.com/image/upload/t_web767x639/img/recipe/ras/Assets/b57348f4fd1b5b234444d2e6135bc454/Derivates/b90f071945236c38521a46669e008bb2e59a3740.jpg"
+            alt="巧克力熔岩蛋糕">
+          <h3>巧克力熔岩蛋糕</h3>
+          <p>NT$250</p>
+        </div>
+      </div>
+      <div class="more-info">
+        <a href="http://">點我了解更多....</a>
+      </div>
+    </section>
+  </div>
+
+  <div class="container2">
+    <section id="reservation">
+      <h2>訂位</h2>
+      <form>
+        <label for="name">姓名：</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+        <label for="date">日期：</label><br>
+        <input type="date" id="date" name="date" required><br><br>
+        <label for="time">時間：</label><br>
+        <input type="time" id="time" name="time" required><br><br>
+        <label for="guests">用餐人數：</label><br>
+        <input type="number" id="guests" name="guests" min="1" required><br><br>
+        <button type="submit">送出訂位</button>
+      </form>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 美食天堂。版權所有。</p>
+    <section id="contact">
+      <h2>聯絡我們-國立臺北商業大學 (National Taipei University of Business)</h2>
+      <p>地址：100025台北市中正區濟南路一段321號</p>
+      <p>電話：(02)33222777</p>
+      <p>Facebook：<a href="https://www.facebook.com/NTUB1917"
+          style="color: white; text-decoration: underline;">https://www.facebook.com/NTUB1917</a></p>
+    </section>
+  </footer>
+
+  <script>
+    const backToTopButton = document.getElementById('back-to-top');
+
+    // 顯示或隱藏按鈕
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 300) {
+        backToTopButton.classList.add('show');
+      } else {
+        backToTopButton.classList.remove('show');
+      }
+    });
+
+    // 點擊回到頂端
+    backToTopButton.addEventListener('click', () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+  </script>
+</body>
+
+</html>
