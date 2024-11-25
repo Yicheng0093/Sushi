@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>成功頁面</title>
+</head>
+<body>
+    <div class="container2">
+        <section id="reservation">
+            <h2>訂位</h2>
+            <form action="success.html" method="post">
+                <label for="name">姓名：</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+                
+                <label for="date">日期：</label><br>
+                <input type="date" id="date" name="date" required><br><br>
+                
+                <label for="time">時間：</label><br>
+                <input type="time" id="time" name="time" required><br><br>
+                
+                <label for="guests">用餐人數：</label><br>
+                <input type="number" id="guests" name="guests" min="1" required><br><br>
+                
+                <label for="location">地點：</label><br>
+                <select id="location" name="location" required>
+                    <option value="" disabled selected>請選擇地點</option>
+                    <option value="you">你家</option>
+                    <option value="me">我家</option>
+                    <option value="he">他家</option>
+                </select><br><br>
+                
+                <button type="submit">送出訂位</button>
+            </form>
+        </section>
+    </div>
+</body>
