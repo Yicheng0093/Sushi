@@ -52,21 +52,30 @@
           
 
 
-            <div id="step2" style="display:none;">
-                <label for="date">選擇日期：</label><br>
-                <input type="date" id="date" name="date" required><br><br>
-                
-                <label for="time">選擇時間：</label><br>
-                <input type="time" id="time" name="time" required><br><br>
-                <button onclick="nextStep(3)">下一步</button>
-            </div>
+          <div id="step2" style="display:none;">
+            <label for="date">選擇日期：</label><br>
+            <input type="date" id="date" name="date" required><br><br>
+        
+            <label for="time">選擇時間：</label><br>
+            <input type="time" id="time" name="time" required><br><br>
+        
+            <!-- 新增人數 -->
+            <label for="people">人數：</label><br>
+            <input type="number" id="people" name="people" min="1" required><br><br>
+        
+            <!-- 新增用餐小時 -->
+            <label for="dining-hour">用餐小時：</label><br>
+            <input type="number" id="dining-hour" name="dining-hour" min="1" required><br><br>
+        
+            <button onclick="nextStep(3)">下一步</button>
+          </div>
 
 
             <div id="step3" style="display:none;">
-                <label for="name">姓名：</label><br>
+                <label for="name">訂位者姓名：</label><br>
                 <input type="text" id="name" name="name" required><br><br>
 
-                <label for="phone">電話：</label><br>
+                <label for="phone">訂位者電話：</label><br>
                 <input type="tel" id="phone" name="phone" required><br><br>
                 
                 <button onclick="submitReservation()">提交訂位</button>
