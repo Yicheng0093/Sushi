@@ -8,139 +8,85 @@
     <link rel="stylesheet" href="../static/CSS/reservation.css" />
 </head>
 <body>
-    <body>
-        <div id="back-to-top">&#8679;</div>
-        <header>
-          <h1>歡迎來到美食天堂</h1>
-          <p>品味幸福的每一刻</p>
-        </header>
-        <nav>
-          <a href="index.html">首頁</a>
-          <a href="about.html">關於我們</a>
-          <a href="menu.html">菜單</a>
-          <a href="reservation.html">訂位</a>
-          <a href="#contact">聯絡我們</a>
-          <a href="talent_recruitment.html">人才招募</a>
-        </nav>
+    <div id="back-to-top">&#8679;</div>
+    <header>
+        <h1>歡迎來到美食天堂</h1>
+        <p>品味幸福的每一刻</p>
+    </header>
+    <nav>
+        <a href="index.html">首頁</a>
+        <a href="about.html">關於我們</a>
+        <a href="menu.html">菜單</a>
+        <a href="reservation.html">訂位</a>
+        <a href="#contact">聯絡我們</a>
+        <a href="talent_recruitment.html">人才招募</a>
+    </nav>
     <div class="container2">
         <section id="reservation">
-            <h2>訂位</h2>
-            <form action="index.html">
-                <label for="name">姓名：</label><br>
+          <div id="step1">
+            <h3>選擇門市：</h3>
+            <div class="location-container">
+                <!-- 地區 1 -->
+                <div class="location-card" onclick="selectLocation('你家', '台北市中正區濟南路一段321號')">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNwMJadrRWVflDILAU592I91r-cCditVRkug&s" alt="你家" />
+                    <h4>你家</h4>
+                    <p>地址：台北市中正區濟南路一段321號</p>
+                </div>
+                <!-- 地區 2 -->
+                <div class="location-card" onclick="selectLocation('我家', '台北市信義區松山路123號')">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNwMJadrRWVflDILAU592I91r-cCditVRkug&s" alt="我家" />
+                    <h4>我家</h4>
+                    <p>地址：台北市信義區松山路123號</p>
+                </div>
+                <!-- 地區 3 -->
+                <div class="location-card" onclick="selectLocation('他家', '台北市大安區忠孝東路456號')">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNwMJadrRWVflDILAU592I91r-cCditVRkug&s" alt="他家" />
+                    <h4>他家</h4>
+                    <p>地址：台北市大安區忠孝東路456號</p>
+                </div>
+            </div>
+            <br>
+            <button onclick="nextStep(2)">下一步</button>
+            <p id="selected-location">尚未選擇門市。</p> <!-- 顯示選擇的門市 -->
+        </div>
+          
+
+
+          <div id="step2" style="display:none;">
+            <label for="date">選擇日期：</label><br>
+            <input type="date" id="date" name="date" required><br><br>
+        
+            <label for="time">選擇時間：</label><br>
+            <input type="time" id="time" name="time" required><br><br>
+        
+            <!-- 新增人數 -->
+            <label for="people">人數：</label><br>
+            <input type="number" id="people" name="people" min="1" required><br><br>
+        
+            <!-- 新增用餐小時 -->
+            <label for="dining-hour">用餐小時：</label><br>
+            <input type="number" id="dining-hour" name="dining-hour" min="1" required><br><br>
+        
+            <button onclick="nextStep(3)">下一步</button>
+          </div>
+
+
+            <div id="step3" style="display:none;">
+                <label for="name">訂位者姓名：</label><br>
                 <input type="text" id="name" name="name" required><br><br>
+
+                <label for="phone">訂位者電話：</label><br>
+                <input type="tel" id="phone" name="phone" required><br><br>
                 
-                <label for="date">日期：</label><br>
-                <input type="date" id="date" name="date" required><br><br>
-                
-                <label for="time">時間：</label><br>
-                <input type="time" id="time" name="time" required><br><br>
-                
-                <label for="guests">用餐人數：</label><br>
-                <input type="number" id="guests" name="guests" min="1" required><br><br>
-                
-                <label for="location">地點：</label><br>
-                <select id="location" name="location" required>
-                    <option value="" disabled selected>請選擇地點</option>
-                    <option value="you">你家</option>
-                    <option value="me">我家</option>
-                    <option value="he">他家</option>
-                </select><br><br>
-                
-                <button type="submit">送出訂位</button>
-            </form>
+                <button onclick="submitReservation()">提交訂位</button>
+            </div>
         </section>
     </div>
 
-
     <footer>
-        <div class="container">
-          <!-- 左側：聯絡資訊 -->
-          <section id="contact">
-            <div class="contact-info">
-              <br />
-              <h2>聯絡我們 - 國立臺北商業大學 (NTUB)</h2>
-              <hr />
-              <br />
-              <p>地址：100025台北市中正區濟南路一段321號</p>
-              <p>電話：(02)33222777</p>
-              <p>
-                電子郵件：<a href="mailto:info@ntub.edu.tw">info@ntub.edu.tw</a>
-              </p>
-              <p>
-                Facebook：<a
-                  href="https://www.facebook.com/NTUB1917"
-                  target="_blank"
-                  >https://www.facebook.com/NTUB1917</a
-                >
-              </p>
-              <br />
-              <p>&copy; 2024 美食天堂。版權所有。</p>
-            </div>
-          </section>
-  
-          <!-- 分隔線 -->
-  
-          <!-- 中間：一般消費與團體訂購資訊 -->
-          <div class="general-info">
-            <br />
-            <h2>一般消費與團體訂購</h2>
-            <hr />
-            <h3>一般消費</h3>
-            <ul>
-              <li>歡迎至各門市選購，或提前電洽門市預購。</li>
-              <li>提供家庭聚餐的便利性。</li>
-            </ul>
-            <h3>各大企業、學校、戶外活動</h3>
-            <ul>
-              <li>聯絡窗口: (02)2760-2200 分機1508</li>
-              <li>
-                Email:
-                <a href="mailto:sushitakeout@sushiexpress.com.tw"
-                  >sushitakeout@sushiexpress.com.tw</a
-                >
-              </li>
-              <li>
-                歡迎訂購各式餐盒，敬請提前一個月來電訂購，我們將有專人為您規劃與服務
-              </li>
-            </ul>
-          </div>
-  
-          <!-- 分隔線 -->
-  
-          <!-- 右側：顧客建議表單 -->
-          <div class="feedback-form">
-            <h2>顧客建議</h2>
-            <form id="customer-feedback">
-              <label for="name">姓名：</label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                placeholder="請輸入您的姓名"
-              />
-  
-              <label for="email">電子郵件：</label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="請輸入您的電子郵件"
-              />
-  
-              <label for="suggestion">建議內容：</label>
-              <textarea
-                id="suggestion"
-                name="suggestion"
-                rows="4"
-                placeholder="請輸入您的建議或反饋"
-              ></textarea>
-  
-              <button type="submit">提交建議</button>
-            </form>
-          </div>
-        </div>
-      </footer>
-      <script>
-        
-      </script>
+        <!-- 底部內容略過 -->
+    </footer>
+
+    <script src="../static/javaScript/reservation.js"></script>
 </body>
+</html>

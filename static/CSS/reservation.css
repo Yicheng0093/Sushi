@@ -107,3 +107,63 @@ html {
 #location option:disabled {
     color: #aaa;
 }
+
+.location-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* 每個門市的卡片樣式 */
+.location-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.location-card:hover {
+    transform: scale(1.05); /* 點選卡片放大 */
+}
+
+/* 圖片樣式 */
+.location-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* 卡片內文字樣式 */
+.location-card h4 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.location-card p {
+    font-size: 0.9em;
+    color: #666;
+}
+button {
+    display: block;             /* 讓按鈕變成塊級元素 */
+    margin: 0 auto;             /* 自動左右邊距，達到水平居中 */
+    padding: 10px 20px;         /* 設定按鈕的內邊距 */
+    font-size: 16px;            /* 設定字型大小 */
+    background-color: #4CAF50;  /* 設定背景顏色 */
+    color: white;               /* 設定文字顏色 */
+    border: none;               /* 去掉邊框 */
+    border-radius: 5px;         /* 設定圓角 */
+    cursor: pointer;           /* 滑鼠指針變為手指 */
+}
+
+button:hover {
+    background-color: #45a049;  /* 當滑鼠懸停時，改變背景顏色 */
+}
+
+#selected-location {
+    text-align: center; /* 文字水平置中 */
+    margin: 0 auto;     /* 元素本身水平居中 */
+    display: block;     /* 使元素成為塊級元素 */
+}
