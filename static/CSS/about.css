@@ -1,3 +1,4 @@
+/* 預設樣式 */
 body {
     margin: 0;
     padding: 0;
@@ -7,7 +8,7 @@ body {
     line-height: 1.6;
 }
 
-.con{
+.con {
     margin-left: 500px;
     margin-right: 500px;
 }
@@ -39,49 +40,170 @@ nav a:hover {
     color: #e8c46c;
     text-decoration: underline;
 }
-.section_divider{
+
+.section_divider {
     margin-left: 50px;
 }
 
-/* 使容器支持 Flexbox 布局 */
+/* Flexbox 布局 */
 .leftbox {
     display: flex;
-    flex-wrap: wrap;  /* 使得在小屏幕下元素會自動換行 */
-    justify-content: space-between; /* 控制子元素間距 */
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-/* 設定圖片區域 */
 #img_about_intro {
-    flex: 1;  /* 讓圖片佔據剩餘的空間 */
-    max-width: 50%; /* 讓圖片最多占一半寬度 */
+    flex: 1;
+    max-width: 50%;
 }
 
 #img_about_intro img {
-    width: 100%;  /* 確保圖片自適應寬度 */
-    height: auto;  /* 保持圖片比例 */
+    width: 100%;
+    height: auto;
 }
 
-/* 設定文字內容區域 */
 #content_intro {
-    flex: 1;  /* 讓文字區域佔據剩餘的空間 */
-    max-width: 50%; /* 讓文字最多占一半寬度 */
-    padding-left: 20px; /* 讓文字區域有一些左邊距 */
+    flex: 1;
+    max-width: 50%;
+    padding-left: 20px;
 }
 
+@media (max-width: 1200px) {
+    /* 中等螢幕（平板、筆記型電腦） */
+    .con {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    header {
+        font-size: 1.6rem;
+    }
+
+    nav a {
+        font-size: 1.1rem;
+    }
+}
+
+/* 小螢幕 */
 @media (max-width: 767px) {
-/* 在螢幕寬度小於767px時，讓元素堆疊排列 */
     .leftbox {
-        flex-direction: column;  /* 使元素垂直排列 */
-        align-items: center; /* 讓元素居中 */
+        flex-direction: column;
+        align-items: center;
     }
 
     #img_about_intro,
     #content_intro {
-        max-width: 100%; /* 讓圖片和文字區域都佔滿螢幕寬度 */
-        padding-left: 0; /* 移除左邊距 */
+        max-width: 100%;
+        padding-left: 0;
+    }
+
+    header {
+        font-size: 1.4rem;
+    }
+
+    nav {
+        flex-direction: column;
+        padding: 1rem 0;
+    }
+
+    nav a {
+        margin: 10px 0;
+        font-size: 1.1rem;
+    }
+
+    /* 優化排版 */
+    .section_divider {
+        font-size: 1.4rem;
+    }
+
+    .u1 li {
+        font-size: 1rem;
     }
 }
 
+/* 超小螢幕（手機） */
+@media (max-width: 480px) {
+    .con {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    header {
+        font-size: 1.3rem;
+        padding: 1rem 0;
+    }
+
+    nav a {
+        font-size: 1rem;
+    }
+
+    .section_divider {
+        font-size: 1.2rem;
+    }
+
+    .u1 li {
+        font-size: 0.9rem;
+    }
+
+    /* 調整圖片尺寸 */
+    #img_about_intro img,
+    #img_about_intro1 img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* 文字區域的處理 */
+    .about_content {
+        padding-left: 0;
+    }
+}
+
+/* 右邊內容區域 */
+.rightbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#img_about_intro1 {
+    flex: 1;
+    max-width: 50%;
+    margin-top: 50px;
+}
+
+#content_intro1 {
+    flex: 1;
+    max-width: 50%;
+    padding-left: 20px;
+    margin-top: 50px;
+}
+
+.rightbox img {
+    height: auto;
+}
+
+.about_content {
+    padding-left: 20px;
+}
+
+@media (max-width: 767px) {
+    .rightbox {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .rightbox .col-sm-6 {
+        max-width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .about_content {
+        padding-left: 0;
+    }
+}
+
+/* .about-us section */
 .about-us {
     margin: auto;
     padding: 2.5rem;
@@ -115,19 +237,34 @@ footer {
 footer p {
     margin: 0;
 }
+
 @keyframes fadeIn {
-from {
-    opacity: 0;
-}
-to {
-    opacity: 1;
-}
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 .about-us h1, .about-us p, .about-us .team-photo {
     animation: fadeIn 1s ease-in-out;
 }
 
-.u1{
-    margin-top: 75px;
+.u1 {
+    margin-top: 40px;
+}
+
+/* 頁面過渡動畫 */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.about-us h1, .about-us p, .about-us .team-photo {
+    animation: fadeIn 1s ease-in-out;
 }
