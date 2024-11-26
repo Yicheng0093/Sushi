@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>人才招募</title>
+  <link rel="stylesheet" href="../static/CSS/talent_recruitment.css">
+</head>
+
+<body>
+  <header>
+    <h1>人才招募</h1>
+    <p>加入我們，一起共創美食天堂的未來！</p>
+  </header>
+
+  <nav>
+    <a href="index.html">首頁</a>
+    <a href="reservation.html">訂位</a>
+    <a href="#contact">聯絡我們</a>
+  </nav>
+
+  <div class="container">
+    <section id="culture">
+      <h2>企業文化</h2>
+      <div class="culture">
+        <div class="culture-item">
+          <img src="https://img.icons8.com/ios/64/000000/conference-call.png" alt="團隊合作">
+          <h3>團隊合作</h3>
+          <p>在美食天堂，我們相信合作能創造奇蹟。</p>
+        </div>
+        <div class="culture-item">
+          <img src="https://img.icons8.com/ios/64/000000/idea.png" alt="創新精神">
+          <h3>創新精神</h3>
+          <p>持續改變，只為帶來更好的顧客體驗。</p>
+        </div>
+        <div class="culture-item">
+          <img src="https://img.icons8.com/ios/64/000000/goal.png" alt="卓越服務">
+          <h3>卓越服務</h3>
+          <p>用心服務，讓每一次接觸都成為亮點。</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div class="container">
+    <section id="job-openings">
+      <h2>最新職缺</h2>
+      <div class="job-list">
+        <div class="job-item">
+          <h3>廚房助理</h3>
+          <p>工作內容：協助廚房準備食材及清潔。</p>
+          <p>薪資範圍：NT$35,000 起</p>
+          <div class="apply-btn">
+            <a href="#application">立即申請</a>
+          </div>
+        </div>
+        <div class="job-item">
+          <h3>服務生</h3>
+          <p>工作內容：提供顧客服務及餐點介紹。</p>
+          <p>薪資範圍：NT$30,000 起</p>
+          <div class="apply-btn">
+            <a href="#application">立即申請</a>
+          </div>
+        </div>
+        <div class="job-item">
+          <h3>餐廳經理</h3>
+          <p>工作內容：管理團隊及日常運營。</p>
+          <p>薪資範圍：NT$60,000 起</p>
+          <div class="apply-btn">
+            <a href="#application">立即申請</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div class="container">
+    <section id="application">
+      <h2>應徵表單</h2>
+      <form id="application-form">
+        <label for="name">姓名：</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">電子郵件：</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">聯絡電話：</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="position">應徵職位：</label>
+        <select id="position" name="position" required>
+          <option value="">請選擇職位</option>
+          <option value="kitchen_assistant">廚房助理</option>
+          <option value="waiter">服務生</option>
+          <option value="restaurant_manager">餐廳經理</option>
+        </select>
+
+        <label for="resume">履歷簡述：</label>
+        <textarea id="resume" name="resume" rows="5" required></textarea>
+
+        <button type="submit">送出申請</button>
+      </form>
+    </section>
+  </div>
+
+  <!-- 浮動視窗 -->
+  <div class="modal-overlay"></div>
+  <div class="modal" id="success-modal">
+    <h2>申請成功！</h2>
+    <p>感謝您的應徵，我們將盡快與您聯繫。</p>
+    <button id="close-modal">關閉</button>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 美食天堂。版權所有。</p>
+    <p>聯絡我們：(02)33222777</p>
+  </footer>
+
+  <script src="../static/javaScript/talent_recruitment.js"></script>
+</body>
+
+</html>

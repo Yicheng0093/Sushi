@@ -1,0 +1,245 @@
+body {
+    font-family: 'Georgia', serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #fdfaf5;
+    color: #333;
+  }
+
+  header {
+    background: #2c2c2c;
+    color: #d4af37;
+    padding: 1.5rem 0;
+    text-align: center;
+    font-size: 1.8rem;
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+    background: #1f1f1f;
+    padding: 1rem 0;
+  }
+
+  nav a {
+    color: #d4af37;
+    margin: 0 1.5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+  nav a:hover {
+    text-decoration: underline;
+    color: #e8c46c;
+  }
+
+  section {
+    padding: 2.5rem;
+    max-width: 800px;
+    margin: auto;
+  }
+
+  .container {
+    background: #f5f0e6;
+    padding: 2.5rem 0;
+  }
+
+  .culture {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+
+  .culture-item {
+    flex: 1 1 calc(33% - 2rem);
+    text-align: center;
+    border: 1px solid #d4af37;
+    border-radius: 8px;
+    background: #fff;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .culture-item img {
+    max-width: 80px;
+    margin-bottom: 1rem;
+  }
+
+  .culture-item h3 {
+    color: #333;
+    margin-bottom: 0.5rem;
+  }
+
+  .culture-item p {
+    color: #666;
+  }
+
+  .job-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  .job-item {
+    background: #fff;
+    border: 1px solid #d4af37;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .job-item h3 {
+    margin: 0;
+    color: #333;
+  }
+
+  .job-item p {
+    margin: 0.5rem 0;
+    color: #666;
+  }
+
+  .apply-btn {
+    margin-top: 10px;
+  }
+
+  .apply-btn a {
+    text-decoration: none;
+    color: #d4af37;
+    font-weight: bold;
+    border: 2px solid #d4af37;
+    border-radius: 5px;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+  }
+
+  .apply-btn a:hover {
+    background-color: #d4af37;
+    color: #fff;
+  }
+
+  footer {
+    text-align: center;
+    padding: 2rem;
+    background: #2c2c2c;
+    color: #d4af37;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background: #fff;
+    padding: 2.5rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    margin: 2.5rem auto;
+    max-width: 600px;
+  }
+
+  form input,
+  form textarea,
+  form button {
+    padding: 1rem;
+    font-size: 1.1rem;
+    border: 1px solid #d4af37;
+    border-radius: 8px;
+  }
+
+  form input:focus,
+  form textarea:focus {
+    border-color: #d4af37;
+    outline: none;
+    box-shadow: 0 0 8px rgba(212, 175, 55, 0.5);
+  }
+
+  form button {
+    background: #d4af37;
+    color: #2c2c2c;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    font-weight: bold;
+  }
+
+  form button:hover {
+    background: #e8c46c;
+  }
+  /* 下拉表單 */
+  form input,
+  form textarea,
+  form select,
+  form button {
+  padding: 1rem;
+  font-size: 1.1rem;
+  border: 1px solid #d4af37;
+  border-radius: 8px;
+  background: #fff;
+  }
+
+  form select {
+  appearance: none; /* 移除瀏覽器預設樣式 */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 10'%3E%3Cpolygon points='0,0 20,0 10,10' style='fill:%23d4af37;'/%3E%3C/svg%3E") no-repeat right 1rem center;
+  background-size: 1rem;
+  cursor: pointer;
+  }
+
+  form input:focus,
+  form textarea:focus,
+  form select:focus {
+  border-color: #d4af37;
+  outline: none;
+  box-shadow: 0 0 8px rgba(212, 175, 55, 0.5);
+  }
+
+   /* 浮動視窗樣式 */
+  .modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    background: #fff;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    display: none;
+  }
+
+  .modal h2 {
+    margin-bottom: 1rem;
+    color: #333;
+  }
+
+  .modal button {
+    padding: 0.8rem 1.5rem;
+    background: #d4af37;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+
+  .modal button:hover {
+    background: #e8c46c;
+  }
+
+  /* 背景遮罩 */
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    display: none;
+  }
