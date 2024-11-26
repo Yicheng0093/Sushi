@@ -1,6 +1,7 @@
+import json
+
 import requests
 from bs4 import BeautifulSoup
-import json
 
 # 爬取目標網址
 url = "https://www.sushiexpress.com.tw/sushi-express/Menu"
@@ -26,19 +27,37 @@ for category_name, section_id in categories.items():
     section = soup.select_one(f"#{section_id}")
     if section:
         for item in section.select("div.grid-item"):  # 每個菜品包裹在 div.grid-item 中
-            img_url = f'https://www.sushiexpress.com.tw{item.select_one("img")["src"]}' if item.select_one("img") else None
-            name = item.select_one("p.product_name").contents[0].strip() if item.select_one("p.product_name") else None
-            name_en = item.select_one("span.product_name_en").text.strip() if item.select_one("span.product_name_en") else None
-            price = item.select_one("span.product_name_jp").text.strip() if item.select_one("span.product_name_jp") else None
+            img_url = (
+                f'https://www.sushiexpress.com.tw{item.select_one("img")["src"]}'
+                if item.select_one("img")
+                else None
+            )
+            name = (
+                item.select_one("p.product_name").contents[0].strip()
+                if item.select_one("p.product_name")
+                else None
+            )
+            name_en = (
+                item.select_one("span.product_name_en").text.strip()
+                if item.select_one("span.product_name_en")
+                else None
+            )
+            price = (
+                item.select_one("span.product_name_jp").text.strip()
+                if item.select_one("span.product_name_jp")
+                else None
+            )
 
             # 添加分類信息
-            menu_items.append({
-                "category": category_name,
-                "image": img_url,
-                "name": name,
-                "name_en": name_en,
-                "price": price,
-            })
+            menu_items.append(
+                {
+                    "category": category_name,
+                    "image": img_url,
+                    "name": name,
+                    "name_en": name_en,
+                    "price": price,
+                }
+            )
 
 # 將數據保存為 JSON
 output_file = "../static/data/menu.json"
