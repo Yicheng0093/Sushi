@@ -193,6 +193,35 @@ footer .feedback-form button {
 footer .feedback-form button:hover {
   background-color: #e8c46c;
 }
+/* 表單 */
+.modal-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+button {
+  cursor: pointer;
+}
+
 
   .container1 {
     padding: 2.5rem 0;
