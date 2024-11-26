@@ -30,9 +30,6 @@ document.addEventListener("DOMContentLoaded", () => {
             <h3>${item.name}</h3>
             <p>${item.name_en}</p>
             <p class="price">${item.price}</p>
-            <div class="more-info">
-              <a href="#">更多資訊</a>
-            </div>
           `;
 
           // 將生成的菜單項目添加到容器
