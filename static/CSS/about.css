@@ -5,78 +5,129 @@ body {
     color: #333;
     font-family: 'Georgia', serif;
     line-height: 1.6;
-  }
+}
 
-  header {
+.con{
+    margin-left: 500px;
+    margin-right: 500px;
+}
+
+header {
     padding: 1.5rem 0;
     background: #2c2c2c;
     color: #d4af37;
     text-align: center;
     font-size: 1.8rem;
-  }
+}
 
-  nav {
+nav {
     display: flex;
     justify-content: center;
     padding: 1rem 0;
     background: #1f1f1f;
-  }
+}
 
-  nav a {
+nav a {
     margin: 0 1.5rem;
     color: #d4af37;
     text-decoration: none;
     font-weight: bold;
     font-size: 1.2rem;
-  }
+}
 
-  nav a:hover {
+nav a:hover {
     color: #e8c46c;
     text-decoration: underline;
-  }
+}
+.section_divider{
+    margin-left: 50px;
+}
 
-  .about-us {
+/* 使容器支持 Flexbox 布局 */
+.leftbox {
+    display: flex;
+    flex-wrap: wrap;  /* 使得在小屏幕下元素會自動換行 */
+    justify-content: space-between; /* 控制子元素間距 */
+}
+
+/* 設定圖片區域 */
+#img_about_intro {
+    flex: 1;  /* 讓圖片佔據剩餘的空間 */
+    max-width: 50%; /* 讓圖片最多占一半寬度 */
+}
+
+#img_about_intro img {
+    width: 100%;  /* 確保圖片自適應寬度 */
+    height: auto;  /* 保持圖片比例 */
+}
+
+/* 設定文字內容區域 */
+#content_intro {
+    flex: 1;  /* 讓文字區域佔據剩餘的空間 */
+    max-width: 50%; /* 讓文字最多占一半寬度 */
+    padding-left: 20px; /* 讓文字區域有一些左邊距 */
+}
+
+@media (max-width: 767px) {
+/* 在螢幕寬度小於767px時，讓元素堆疊排列 */
+    .leftbox {
+        flex-direction: column;  /* 使元素垂直排列 */
+        align-items: center; /* 讓元素居中 */
+    }
+
+    #img_about_intro,
+    #content_intro {
+        max-width: 100%; /* 讓圖片和文字區域都佔滿螢幕寬度 */
+        padding-left: 0; /* 移除左邊距 */
+    }
+}
+
+.about-us {
     margin: auto;
     padding: 2.5rem;
     max-width: 800px;
     text-align: center;
-  }
+}
 
-  .about-us h1 {
+.about-us h1 {
     color: #2c2c2c;
     margin-bottom: 1.5rem;
-  }
+}
 
-  .about-us p {
+.about-us p {
     margin: 1rem 0;
-  }
+}
 
-  .about-us .team-photo {
+.about-us .team-photo {
     margin-top: 1.5rem;
     max-width: 100%;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
+}
 
-  footer {
+footer {
     padding: 2rem;
     background-color: #2c2c2c;
     color: #d4af37;
     text-align: center;
-  }
+}
 
-  footer p {
+footer p {
     margin: 0;
-  }
-  @keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+}
+@keyframes fadeIn {
+from {
+    opacity: 0;
+}
+to {
+    opacity: 1;
+}
 }
 
 .about-us h1, .about-us p, .about-us .team-photo {
     animation: fadeIn 1s ease-in-out;
+}
+
+.u1{
+    margin-top: 75px;
 }
