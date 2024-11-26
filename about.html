@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>關於我們 - 美食天堂</title>
+  <style>
+    /* 全域設定 */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background: #ff5722;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* 主內容區域 */
+        main {
+            padding: 2rem;
+        }
+
+        .about-us {
+            text-align: center;
+            margin: 0 auto;
+            max-width: 800px;
+        }
+
+        .about-us h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #ff5722;
+        }
+
+        .about-us p {
+            font-size: 1.1rem;
+            margin: 0.5rem 0;
+        }
+
+        .about-us .team-photo {
+            max-width: 100%;
+            height: auto;
+            margin-top: 1rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* 頁尾 */
+        footer {
+            text-align: center;
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .about-us h1, .about-us p, .about-us .team-photo {
+            animation: fadeIn 1s ease-in-out;
+        }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">首頁</a>
+      <a href="about.html">關於我們</a>
+      <a href="index.html#menu">菜單</a>
+      <a href="index.html#contact">聯絡我們</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="about-us">
+      <h1>關於我們</h1>
+      <p>歡迎來到美食天堂！我們專注於提供最美味的佳餚和難忘的用餐體驗。</p>
+      <p>從傳統到創新，我們的料理匯集了世界各地的精髓，適合每一位美食愛好者。</p>
+      <img src="https://www.wowlavie.com/files/article/a1/19101/atl_m_200019101_576.jpg" alt="美食天堂的團隊" class="team-photo">
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 美食天堂. 保留所有權利.</p>
+  </footer>
+</body>
+</html>
