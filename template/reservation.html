@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>訂位頁面</title>
-    <link rel="stylesheet" href="../static/CSS/index.css">
+    <link rel="stylesheet" href="../static/CSS/footer.css">
+    <link rel="stylesheet" href="../static/CSS/header.css">
+    <link rel="stylesheet" href="../static/CSS/indexbody.css">
     <link rel="stylesheet" href="../static/CSS/reservation.css" />
 </head>
 <body>
@@ -84,8 +86,63 @@
     </div>
 
     <footer>
-        <!-- 底部內容略過 -->
-    </footer>
+        <div class="container">
+          <!-- 聯絡資訊 -->
+          <div class="general-info">
+            <h2>聯絡我們</h2>
+            <hr>
+            <p>地址：100025台北市中正區濟南路一段321號</p>
+            <p>電話：(02)33222777</p>
+            <p>電子郵件：<a href="mailto:info@ntub.edu.tw">info@ntub.edu.tw</a></p>
+            <p>Facebook：<a href="https://www.facebook.com/NTUB1917" target="_blank">https://www.facebook.com/NTUB1917</a></p>
+          </div>
+    
+        <!-- 顧客建議表單 -->
+        <div class="feedback-form">
+          <h2>顧客建議</h2>
+          <form id="customer-feedback">
+            <label for="name">姓名：</label>
+            <input type="text" id="name" name="name" placeholder="請輸入您的姓名" required>
+    
+            <label for="email">電子郵件：</label>
+            <input type="email" id="email" name="email" placeholder="請輸入您的電子郵件" required>
+    
+            <label for="suggestion">建議內容：</label>
+            <textarea id="suggestion" name="suggestion" rows="4" placeholder="請輸入您的建議或反饋" required></textarea>
+    
+            <button type="submit">提交建議</button>
+          </form>
+        </div>
+    
+        <!-- 浮動視窗 -->
+        <div class="modal-overlay"></div>
+        <div class="modal" id="feedback-success-modal">
+          <h2>感謝您的建議！</h2>
+          <p>您的反饋對我們非常重要，我們將盡快處理。</p>
+          <button id="close-feedback-modal">關閉</button>
+        </div>
+          
+          <!-- 一般消費與團體訂購資訊 -->
+          <div class="general-info">
+            <h2>一般消費與團體訂購</h2>
+            <hr>
+            <h3>一般消費</h3>
+            <ul>
+              <li>歡迎至各門市選購，或提前電洽門市預購。</li>
+              <li>提供家庭聚餐的便利性。</li>
+            </ul>
+            <h3>各大企業、學校、戶外活動</h3>
+            <ul>
+              <li>聯絡窗口: (02)2760-2200 分機1508</li>
+              <li>Email: <a href="mailto:sushitakeout@sushiexpress.com.tw">sushitakeout@sushiexpress.com.tw</a></li>
+              <li>歡迎訂購各式餐盒，敬請提前一個月來電訂購，我們將有專人為您規劃與服務</li>
+            </ul>
+          </div>
+      
+    
+        </div>
+        <p class="footer-center" id="contact">&copy; 2024 美食天堂。版權所有。</p>
+      </footer>
 
     <script src="../static/javaScript/reservation.js"></script>
 </body>

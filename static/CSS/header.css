@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fdfaf5;
+    color: #333;
+    font-family: 'Georgia', serif;
+    line-height: 1.6;
+  }
+
+  header {
+    padding: 1.5rem 0;
+    background: #2c2c2c;
+    color: #d4af37;
+    text-align: center;
+    font-size: 1.8rem;
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+    background: #1f1f1f;
+  }
+
+  nav a {
+    margin: 0 1.5rem;
+    color: #d4af37;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+
+  nav a:hover {
+    color: #e8c46c;
+    text-decoration: underline;
+  }
+
+  
