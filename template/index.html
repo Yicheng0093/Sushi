@@ -60,7 +60,7 @@
 
   <footer>
     <div class="container">
-      <!-- 左側：聯絡資訊 -->
+      <!-- 聯絡資訊 -->
       <div class="general-info">
         <h2>聯絡我們</h2>
         <hr>
@@ -69,8 +69,25 @@
         <p>電子郵件：<a href="mailto:info@ntub.edu.tw">info@ntub.edu.tw</a></p>
         <p>Facebook：<a href="https://www.facebook.com/NTUB1917" target="_blank">https://www.facebook.com/NTUB1917</a></p>
       </div>
+
+      <!--顧客建議表單 -->
+      <div class="feedback-form">
+        <h2>顧客建議</h2>
+        <form id="customer-feedback">
+          <label for="name">姓名：</label>
+          <input type="text" id="name" name="name" placeholder="請輸入您的姓名">
   
-      <!-- 中間：一般消費與團體訂購資訊 -->
+          <label for="email">電子郵件：</label>
+          <input type="email" id="email" name="email" placeholder="請輸入您的電子郵件">
+  
+          <label for="suggestion">建議內容：</label>
+          <textarea id="suggestion" name="suggestion" rows="4" placeholder="請輸入您的建議或反饋"></textarea>
+  
+          <button type="submit">提交建議</button>
+        </form>
+      </div>
+  
+      <!-- 一般消費與團體訂購資訊 -->
       <div class="general-info">
         <h2>一般消費與團體訂購</h2>
         <hr>
@@ -87,22 +104,7 @@
         </ul>
       </div>
   
-      <!-- 右側：顧客建議表單 -->
-      <div class="feedback-form">
-        <h2>顧客建議</h2>
-        <form id="customer-feedback">
-          <label for="name">姓名：</label>
-          <input type="text" id="name" name="name" placeholder="請輸入您的姓名">
-  
-          <label for="email">電子郵件：</label>
-          <input type="email" id="email" name="email" placeholder="請輸入您的電子郵件">
-  
-          <label for="suggestion">建議內容：</label>
-          <textarea id="suggestion" name="suggestion" rows="4" placeholder="請輸入您的建議或反饋"></textarea>
-  
-          <button type="submit">提交建議</button>
-        </form>
-      </div>
+
     </div>
     <p class="footer-center">&copy; 2024 美食天堂。版權所有。</p>
   </footer>
