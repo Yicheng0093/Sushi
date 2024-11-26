@@ -1,0 +1,131 @@
+.container1 {
+padding: 2.5rem 0;
+background: #f5f0e6;
+}
+
+.container2 {
+padding: 2.5rem 0;
+background: #e6dcd3;
+}
+
+/* 表單 */
+#reservation {
+display: flex;
+align-items: center;
+flex-direction: column;
+margin: 2.5rem auto;
+padding: 2.5rem;
+max-width: 600px;
+border-radius: 15px;
+background: #fff;
+box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+#reservation label {
+color: #2c2c2c;
+font-weight: bold;
+}
+
+#reservation input,
+#reservation button {
+padding: 1rem;
+border: 1px solid #d4af37;
+border-radius: 8px;
+font-size: 1.1rem;
+}
+
+#reservation input:focus {
+outline: none;
+border-color: #d4af37;
+box-shadow: 0 0 8px rgba(212, 175, 55, 0.5);
+}
+
+#reservation button {
+background: #d4af37;
+color: #2c2c2c;
+font-weight: bold;
+cursor: pointer;
+transition: background 0.3s ease;
+}
+
+#reservation button:hover {
+background: #e8c46c;
+}
+
+/* 回頂端按鈕 */
+#back-to-top {
+position: fixed;
+bottom: 20px;
+left: 20px;
+display: none;
+width: 50px;
+height: 50px;
+border-radius: 50%;
+background: #d4af37;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+color: white;
+text-align: center;
+font-size: 24px;
+line-height: 50px;
+cursor: pointer;
+transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+#back-to-top:hover {
+background: #e8c46c;
+transform: scale(1.1);
+}
+
+#back-to-top.show {
+display: block;
+opacity: 1;
+}
+
+html {
+scroll-behavior: smooth;
+}
+
+.menu-item {
+padding: 10px;
+border: 1px solid #d4af37;
+border-radius: 8px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+text-align: center;
+}
+
+.menu-item img {
+margin-bottom: 10px;
+width: 100%;
+height: auto;
+border-radius: 8px;
+}
+
+.menu-item h3 {
+margin: 10px 0 5px;
+color: #333;
+}
+
+.menu-item p {
+margin: 0;
+color: #666;
+}
+.more-info
+{
+margin-top: 10px;
+}
+
+.more-info a {
+display: inline-block;
+padding: 5px 15px;
+border: 2px solid #d4af37;
+border-radius: 5px;
+color: #d4af37;
+text-decoration: none;
+font-weight: bold;
+transition: all 0.3s ease;
+}
+
+.more-info a:hover {
+background-color: #d4af37;
+color: #fff;
+}
