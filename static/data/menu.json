@@ -1,0 +1,674 @@
+[
+    {
+        "category": "握壽司",
+        "image": "https://www.sushiexpress.com.tw/images/Product/7501_s.png",
+        "name": "歐霸辛奇豬",
+        "name_en": "Pork Kimchi",
+        "price": "30元"
+    },
+    {
+        "category": "握壽司",
+        "image": "https://www.sushiexpress.com.tw/images/Product/6482_s.png",
+        "name": "蟹膏赤蝦",
+        "name_en": "Velvet Shrimp w／ Crab Roe",
+        "price": "40元"
+    },
+    {
+        "category": "握壽司",
+        "image": "https://www.sushiexpress.com.tw/images/Product/6841_s.png",
+        "name": "蒜香乳酪燒鮭",
+        "name_en": "Salmon w Garlic Cheese Sauce",
+        "price": "40元"
+    },
+    {
+        "category": "握壽司",
+        "image": "https://www.sushiexpress.com.tw/images/Product/7015_s.png",
+        "name": "醬燒漢堡排",
+        "name_en": "Hamburger Steak Sushi",
+        "price": "40元"
+    },
+    {
+        "category": "握壽司",
+        "image": "https://www.sushiexpress.com.tw/images/Product/7016_s.png",
+        "name": "極鮮玻璃蝦",
+        "name_en": "Premium Glass Shrimp",
+        "price": "40元"
+    },
+    {
+        "category": "握壽司",
+        "image": "https://www.sushiexpress.com.tw/images/Product/7306_s.png",
+        "name": "蟹膏紅蟹雙享",
+        "name_en": "Crab Leg  w Crab Roe",
+        "price": "40元"
+    },
+    {
+        "category": "握壽司",
+        "image": "https://www.sushiexpress.com.tw/images/Product/7394_s.png",
+        "name": "炙燒起士秋鮭",
+        "name_en": "Seared Salmon w Cheese",
+        "price": "40元"
+    },
+    {
+        "category": "握壽司",
+        "image": "https://www.sushiexpress.com.tw/images/Product/7497_s.png",
+        "name": "努那乳酪燒鮭",
+        "name_en": "Grilled Salmpn w Gochujang",
+        "price": "40元"
+    },
+    {
+        "category": "握壽司",
+        "image": "https://www.sushiexpress.com.tw/images/Product/7499_s.png",
+        "name": "秘醬雙起士和牛",
+        "name_en": "Beef w Double Cheese",
+        "price": "40元"
+    },
+    {
+        "category": "握壽司",
+        "image": "https://www.sushiexpress.com.tw/images/Product/7457_s.png",
+        "name": "濃郁蟹黃赤蝦",
+        "name_en": "Velvet Shrimp w Crab Roe",
+        "price": "60元"
+    },
+    {
+        "category": "握壽司",
+        "image": "https://www.sushiexpress.com.tw/images/Product/7495_s.png",
+        "name": "韓醬赤蝦",
+        "name_en": "Velvet Shrimp w Gochujang",
+        "price": "60元"
+    },
+    {
+        "category": "握壽司",
+        "image": "https://www.sushiexpress.com.tw/images/Product/7214_s.png",
+        "name": "極盛蝦三味",
+        "name_en": "Premium Shrimp Set",
+        "price": "60元"
+    },
+    {
+        "category": "握壽司",
+        "image": "https://www.sushiexpress.com.tw/images/Product/6506_s.png",
+        "name": "花枝",
+        "name_en": "Cuttlefish",
+        "price": "40元"
+    },
+    {
+        "category": "握壽司",
+        "image": "https://www.sushiexpress.com.tw/images/Product/3951_s.png",
+        "name": "稻荷",
+        "name_en": "Fried Tofu Pouch",
+        "price": "30元"
+    },
+    {
+        "category": "握壽司",
+        "image": "https://www.sushiexpress.com.tw/images/Product/7385_s.png",
+        "name": "明太子比目魚",
+        "name_en": "Pollock Roe  Halibut",
+        "price": "30元"
+    },
+    {
+        "category": "握壽司",
+        "image": "https://www.sushiexpress.com.tw/images/Product/3971_s.png",
+        "name": "黃金鯡魚",
+        "name_en": "Herring with Capelin Roe",
+        "price": "30元"
+    },
+    {
+        "category": "握壽司",
+        "image": "https://www.sushiexpress.com.tw/images/Product/3979_s.png",
+        "name": "蟹風味棒",
+        "name_en": "Imitation Crab Meat",
+        "price": "30元"
+    },
+    {
+        "category": "握壽司",
+        "image": "https://www.sushiexpress.com.tw/images/Product/4348_s.png",
+        "name": "生小卷",
+        "name_en": "Loligo Squid",
+        "price": "30元"
+    },
+    {
+        "category": "握壽司",
+        "image": "https://www.sushiexpress.com.tw/images/Product/4457_s.png",
+        "name": "焦糖鮭魚",
+        "name_en": "Sugar Glazed Salmon",
+        "price": "40元"
+    },
+    {
+        "category": "握壽司",
+        "image": "https://www.sushiexpress.com.tw/images/Product/4560_s.png",
+        "name": "北魷",
+        "name_en": "Pacific Flying Squid",
+        "price": "30元"
+    },
+    {
+        "category": "握壽司",
+        "image": "https://www.sushiexpress.com.tw/images/Product/4564_s.png",
+        "name": "章魚",
+        "name_en": "Cooked Octopus",
+        "price": "30元"
+    },
+    {
+        "category": "握壽司",
+        "image": "https://www.sushiexpress.com.tw/images/Product/4677_s.png",
+        "name": "蒲燒星鰻",
+        "name_en": "Kabayaki Conger Eel",
+        "price": "30元"
+    },
+    {
+        "category": "握壽司",
+        "image": "https://www.sushiexpress.com.tw/images/Product/4836_s.png",
+        "name": "蒜香醬旗魚",
+        "name_en": "Garlic Swordfish",
+        "price": "30元"
+    },
+    {
+        "category": "握壽司",
+        "image": "https://www.sushiexpress.com.tw/images/Product/4851_s.png",
+        "name": "玉子燒",
+        "name_en": "Tamagoyaki",
+        "price": "30元"
+    },
+    {
+        "category": "握壽司",
+        "image": "https://www.sushiexpress.com.tw/images/Product/6457_s.png",
+        "name": "扇貝",
+        "name_en": "Farrer’s Scallops",
+        "price": "30元"
+    },
+    {
+        "category": "握壽司",
+        "image": "https://www.sushiexpress.com.tw/images/Product/6458_s.png",
+        "name": "烤鮭魚肚",
+        "name_en": "Grilled Salmon Belly",
+        "price": "30元"
+    },
+    {
+        "category": "握壽司",
+        "image": "https://www.sushiexpress.com.tw/images/Product/6459_s.png",
+        "name": "蒲燒鯛魚",
+        "name_en": "Kabayaki Tilapia",
+        "price": "30元"
+    },
+    {
+        "category": "握壽司",
+        "image": "https://www.sushiexpress.com.tw/images/Product/6463_s.png",
+        "name": "鮮蝦",
+        "name_en": "Shrimp",
+        "price": "30元"
+    },
+    {
+        "category": "握壽司",
+        "image": "https://www.sushiexpress.com.tw/images/Product/5196_s.png",
+        "name": "醬香洋蔥燻鮭",
+        "name_en": "Smoked Salmon w／ Onion",
+        "price": "40元"
+    },
+    {
+        "category": "握壽司",
+        "image": "https://www.sushiexpress.com.tw/images/Product/6231_s.png",
+        "name": "燒炙起士蝦",
+        "name_en": "Grilled Cheese Shrimp",
+        "price": "40元"
+    },
+    {
+        "category": "握壽司",
+        "image": "https://www.sushiexpress.com.tw/images/Product/6268_s.png",
+        "name": "明太子乳酪蝦",
+        "name_en": "Pollock Roe Cheese Shrimp",
+        "price": "40元"
+    },
+    {
+        "category": "握壽司",
+        "image": "https://www.sushiexpress.com.tw/images/Product/6309_s.png",
+        "name": "鮭魚肚",
+        "name_en": "Salmon Belly",
+        "price": "40元"
+    },
+    {
+        "category": "握壽司",
+        "image": "https://www.sushiexpress.com.tw/images/Product/7387_s.png",
+        "name": "鮭魚花枝",
+        "name_en": "Salmon  Cuttlefish",
+        "price": "40元"
+    },
+    {
+        "category": "握壽司",
+        "image": "https://www.sushiexpress.com.tw/images/Product/7389_s.png",
+        "name": "鮭魚玻璃蝦",
+        "name_en": "Salmon  Glass Shrimp",
+        "price": "40元"
+    },
+    {
+        "category": "握壽司",
+        "image": "https://www.sushiexpress.com.tw/images/Product/7391_s.png",
+        "name": "海螺",
+        "name_en": "Conch",
+        "price": "40元"
+    },
+    {
+        "category": "握壽司",
+        "image": "https://www.sushiexpress.com.tw/images/Product/7393_s.png",
+        "name": "起士鱈場蟹風味棒",
+        "name_en": "Cheese Crab Stick",
+        "price": "40元"
+    },
+    {
+        "category": "握壽司",
+        "image": "https://www.sushiexpress.com.tw/images/Product/3962_s.png",
+        "name": "鮭魚",
+        "name_en": "Salmon",
+        "price": "40元"
+    },
+    {
+        "category": "握壽司",
+        "image": "https://www.sushiexpress.com.tw/images/Product/6832_s.png",
+        "name": "極鮮鮪魚",
+        "name_en": "Fresh Tuna Sushi",
+        "price": "40元"
+    },
+    {
+        "category": "握壽司",
+        "image": "https://www.sushiexpress.com.tw/images/Product/6911_s.png",
+        "name": "蒜香乳酪牛五花",
+        "name_en": "Beef w Garlic Cheese Sauce",
+        "price": "40元"
+    },
+    {
+        "category": "握壽司",
+        "image": "https://www.sushiexpress.com.tw/images/Product/3917_s.png",
+        "name": "炸蝦(限定門市)",
+        "name_en": "Fried Shrimp",
+        "price": "40元"
+    },
+    {
+        "category": "握壽司",
+        "image": "https://www.sushiexpress.com.tw/images/Product/4582_s.png",
+        "name": "北海道厚鮮干貝",
+        "name_en": "Whole Hokkaido Scallop",
+        "price": "60元"
+    },
+    {
+        "category": "握壽司",
+        "image": "https://www.sushiexpress.com.tw/images/Product/4350_s.png",
+        "name": "特上厚切鰻魚",
+        "name_en": "Top Grade Thick Cut Eel",
+        "price": "60元"
+    },
+    {
+        "category": "軍艦壽司",
+        "image": "https://www.sushiexpress.com.tw/images/Product/7406_s.png",
+        "name": "蟹蟹雙享",
+        "name_en": "Crab Meat  Roe Gunkan",
+        "price": "40元"
+    },
+    {
+        "category": "軍艦壽司",
+        "image": "https://www.sushiexpress.com.tw/images/Product/7398_s.png",
+        "name": "鮭魚子甜蝦雙享",
+        "name_en": "Salmon Roe  Sweet Shrimp",
+        "price": "60元"
+    },
+    {
+        "category": "軍艦壽司",
+        "image": "https://www.sushiexpress.com.tw/images/Product/3920_s.png",
+        "name": "山葵風味章魚",
+        "name_en": "Cooked Octopus＆Wasabi Salad",
+        "price": "30元"
+    },
+    {
+        "category": "軍艦壽司",
+        "image": "https://www.sushiexpress.com.tw/images/Product/3922_s.png",
+        "name": "小龍蝦沙拉",
+        "name_en": "Crawfish Salad",
+        "price": "30元"
+    },
+    {
+        "category": "軍艦壽司",
+        "image": "https://www.sushiexpress.com.tw/images/Product/3923_s.png",
+        "name": "玉米",
+        "name_en": "Corn Salad",
+        "price": "30元"
+    },
+    {
+        "category": "軍艦壽司",
+        "image": "https://www.sushiexpress.com.tw/images/Product/3924_s.png",
+        "name": "蝦味魚卵",
+        "name_en": "Fish Roe Gunkan",
+        "price": "30元"
+    },
+    {
+        "category": "軍艦壽司",
+        "image": "https://www.sushiexpress.com.tw/images/Product/6432_s.png",
+        "name": "明太子甜蝦",
+        "name_en": "Sweet Shrimp w／ Pollock Roe",
+        "price": "40元"
+    },
+    {
+        "category": "軍艦壽司",
+        "image": "https://www.sushiexpress.com.tw/images/Product/6520_s.png",
+        "name": "干貝鮭魚子",
+        "name_en": "Scallop＆Salmon Roe",
+        "price": "40元"
+    },
+    {
+        "category": "生魚片",
+        "image": "https://www.sushiexpress.com.tw/images/Product/6833_s.png",
+        "name": "極鮮鮪魚生魚片",
+        "name_en": "Fresh Tuna Sashimi",
+        "price": "40元"
+    },
+    {
+        "category": "生魚片",
+        "image": "https://www.sushiexpress.com.tw/images/Product/4637_s.png",
+        "name": "極鮮鮭魚生魚片",
+        "name_en": "Salmon Sashimi",
+        "price": "60元"
+    },
+    {
+        "category": "生魚片",
+        "image": "https://www.sushiexpress.com.tw/images/Product/7218_s.png",
+        "name": "御選刺身三品",
+        "name_en": "Premium Sashimi trio",
+        "price": "90元"
+    },
+    {
+        "category": "卷類",
+        "image": "https://www.sushiexpress.com.tw/images/Product/7504_s.png",
+        "name": "辣醃魷魚盛",
+        "name_en": "Spicy Octopus Wrap",
+        "price": "40元"
+    },
+    {
+        "category": "卷類",
+        "image": "https://www.sushiexpress.com.tw/images/Product/3949_s.png",
+        "name": "黃瓜細卷",
+        "name_en": "Cucumber Roll",
+        "price": "30元"
+    },
+    {
+        "category": "卷類",
+        "image": "https://www.sushiexpress.com.tw/images/Product/3988_s.png",
+        "name": "香煎海灣貝",
+        "name_en": "Pan Fried Bay Scallop",
+        "price": "30元"
+    },
+    {
+        "category": "卷類",
+        "image": "https://www.sushiexpress.com.tw/images/Product/7280_s.png",
+        "name": "鮮蝦手卷",
+        "name_en": "Shrimp Hand Roll",
+        "price": "30元"
+    },
+    {
+        "category": "卷類",
+        "image": "https://www.sushiexpress.com.tw/images/Product/3340_s.png",
+        "name": "蘆筍手卷",
+        "name_en": "Asparagus Hand Roll",
+        "price": "30元"
+    },
+    {
+        "category": "卷類",
+        "image": "https://www.sushiexpress.com.tw/images/Product/7401_s.png",
+        "name": "白醬燻鮭卷壽司",
+        "name_en": "Smoked Salmon Sushi Roll",
+        "price": "40元"
+    },
+    {
+        "category": "卷類",
+        "image": "https://www.sushiexpress.com.tw/images/Product/7403_s.png",
+        "name": "泡菜牛肉手卷",
+        "name_en": "Beef  Kimchi Hand Roll",
+        "price": "40元"
+    },
+    {
+        "category": "卷類",
+        "image": "https://www.sushiexpress.com.tw/images/Product/7405_s.png",
+        "name": "羅勒牡蠣",
+        "name_en": "Basil  Oyster Wrap",
+        "price": "40元"
+    },
+    {
+        "category": "卷類",
+        "image": "https://www.sushiexpress.com.tw/images/Product/7418_s.png",
+        "name": "鮭魚子盛",
+        "name_en": "Salmon Roe Wrap",
+        "price": "40元"
+    },
+    {
+        "category": "卷類",
+        "image": "https://www.sushiexpress.com.tw/images/Product/7503_s.png",
+        "name": "炸蝦手卷(限定門市)",
+        "name_en": "Shrimp Tempura Hand Roll",
+        "price": "40元"
+    },
+    {
+        "category": "卷類",
+        "image": "https://www.sushiexpress.com.tw/images/Product/7035_s.png",
+        "name": "鮭親子手卷",
+        "name_en": "Salmon  Salmon Roe Hand Roll",
+        "price": "60元"
+    },
+    {
+        "category": "小菜",
+        "image": "https://www.sushiexpress.com.tw/images/Product/7026_s.png",
+        "name": "打拋豬豬茶碗蒸",
+        "name_en": "",
+        "price": "40元"
+    },
+    {
+        "category": "小菜",
+        "image": "https://www.sushiexpress.com.tw/images/Product/7059_s.png",
+        "name": "酸辣劍魷",
+        "name_en": "Sour  Spicy Calamari",
+        "price": "40元"
+    },
+    {
+        "category": "小菜",
+        "image": "https://www.sushiexpress.com.tw/images/Product/7219_s.png",
+        "name": "麻辣海螺",
+        "name_en": "Spicy Sea Snail",
+        "price": "40元"
+    },
+    {
+        "category": "小菜",
+        "image": "https://www.sushiexpress.com.tw/images/Product/7408_s.png",
+        "name": "乾拌椒麻蝦",
+        "name_en": "Sichuan Pepper Shrimp",
+        "price": "40元"
+    },
+    {
+        "category": "小菜",
+        "image": "https://www.sushiexpress.com.tw/images/Product/7410_s.png",
+        "name": "椒麻淡菜",
+        "name_en": "Sichuan Pepper Mussel",
+        "price": "40元"
+    },
+    {
+        "category": "小菜",
+        "image": "https://www.sushiexpress.com.tw/images/Product/7412_s.png",
+        "name": "蟹螯味噌湯",
+        "name_en": "Crab Miso Soup",
+        "price": "60元"
+    },
+    {
+        "category": "小菜",
+        "image": "https://www.sushiexpress.com.tw/images/Product/3928_s.png",
+        "name": "蟹風味棒沙拉",
+        "name_en": "Imitation Crab Meat Salad",
+        "price": "30元"
+    },
+    {
+        "category": "小菜",
+        "image": "https://www.sushiexpress.com.tw/images/Product/3933_s.png",
+        "name": "代鮑沙拉",
+        "name_en": "Imitation Abalone Salad",
+        "price": "30元"
+    },
+    {
+        "category": "小菜",
+        "image": "https://www.sushiexpress.com.tw/images/Product/3935_s.png",
+        "name": "花蛤",
+        "name_en": "Cooked Clams",
+        "price": "30元"
+    },
+    {
+        "category": "小菜",
+        "image": "https://www.sushiexpress.com.tw/images/Product/3937_s.png",
+        "name": "海帶絲",
+        "name_en": "Sesame Seaweed Salad",
+        "price": "30元"
+    },
+    {
+        "category": "小菜",
+        "image": "https://www.sushiexpress.com.tw/images/Product/3938_s.png",
+        "name": "秋葵",
+        "name_en": "Okra",
+        "price": "30元"
+    },
+    {
+        "category": "小菜",
+        "image": "https://www.sushiexpress.com.tw/images/Product/3942_s.png",
+        "name": "玉子燒",
+        "name_en": "Tamagoyaki",
+        "price": "30元"
+    },
+    {
+        "category": "小菜",
+        "image": "https://www.sushiexpress.com.tw/images/Product/4476_s.png",
+        "name": "扇貝茶碗蒸",
+        "name_en": "Steamed Egg Custard with Scallop",
+        "price": "30元"
+    },
+    {
+        "category": "小菜",
+        "image": "https://www.sushiexpress.com.tw/images/Product/5118_s.png",
+        "name": "洋蔥燻鮭",
+        "name_en": "Smoked Salmon w／ Onion",
+        "price": "40元"
+    },
+    {
+        "category": "小菜",
+        "image": "https://www.sushiexpress.com.tw/images/Product/6651_s.png",
+        "name": "北極甜蝦",
+        "name_en": "Sweet Shrimp Sashimi",
+        "price": "40元"
+    },
+    {
+        "category": "小菜",
+        "image": "https://www.sushiexpress.com.tw/images/Product/6917_s.png",
+        "name": "辣味螺肉",
+        "name_en": "Spicy Escargot",
+        "price": "40元"
+    },
+    {
+        "category": "小菜",
+        "image": "https://www.sushiexpress.com.tw/images/Product/70_s.png",
+        "name": "鮮魚味噌湯",
+        "name_en": "Fish Miso Soup with Tofu",
+        "price": "30元"
+    },
+    {
+        "category": "飲品/甜點",
+        "image": "https://www.sushiexpress.com.tw/images/Product/7182_s.png",
+        "name": "檸檬可樂",
+        "name_en": "Coke w／Lemon",
+        "price": "40元"
+    },
+    {
+        "category": "飲品/甜點",
+        "image": "https://www.sushiexpress.com.tw/images/Product/7184_s.png",
+        "name": "可爾必思",
+        "name_en": "Calpis",
+        "price": "40元"
+    },
+    {
+        "category": "飲品/甜點",
+        "image": "https://www.sushiexpress.com.tw/images/Product/7506_s.png",
+        "name": "柚香可爾必思",
+        "name_en": "Yuzu Calpis",
+        "price": "50元"
+    },
+    {
+        "category": "飲品/甜點",
+        "image": "https://www.sushiexpress.com.tw/images/Product/7415_s.png",
+        "name": "焦糖布丁蛋糕",
+        "name_en": "Flan Cheese Cake",
+        "price": "60元"
+    },
+    {
+        "category": "飲品/甜點",
+        "image": "https://www.sushiexpress.com.tw/images/Product/7508_s.png",
+        "name": "堅果可可布朗",
+        "name_en": "Nutty Brownie",
+        "price": "40元"
+    },
+    {
+        "category": "飲品/甜點",
+        "image": "https://www.sushiexpress.com.tw/images/Product/3944_s.png",
+        "name": "草莓奶酪",
+        "name_en": "Strawberry Panna Cotta",
+        "price": "30元"
+    },
+    {
+        "category": "飲品/甜點",
+        "image": "https://www.sushiexpress.com.tw/images/Product/3945_s.png",
+        "name": "黑糖奶酪",
+        "name_en": "Brown Sugar Panna Cotta",
+        "price": "30元"
+    },
+    {
+        "category": "飲品/甜點",
+        "image": "https://www.sushiexpress.com.tw/images/Product/3946_s.png",
+        "name": "芒果布丁",
+        "name_en": "Mango Jelly",
+        "price": "30元"
+    },
+    {
+        "category": "飲品/甜點",
+        "image": "https://www.sushiexpress.com.tw/images/Product/3947_s.png",
+        "name": "鮮奶油布蕾",
+        "name_en": "Custard Pudding",
+        "price": "30元"
+    },
+    {
+        "category": "飲品/甜點",
+        "image": "https://www.sushiexpress.com.tw/images/Product/7131_s.png",
+        "name": "芒果奶酪",
+        "name_en": "Mango Panna Cotta",
+        "price": "40元"
+    },
+    {
+        "category": "飲品/甜點",
+        "image": "https://www.sushiexpress.com.tw/images/Product/6488_s.png",
+        "name": "巧酥乳酪蛋糕",
+        "name_en": "Cookies  Cream Cheesecake",
+        "price": "60元"
+    },
+    {
+        "category": "嚴選商品",
+        "image": "https://www.sushiexpress.com.tw/images/Product/6751_s.png",
+        "name": "爆米花(玉米濃湯風味)",
+        "name_en": "",
+        "price": "30元"
+    },
+    {
+        "category": "嚴選商品",
+        "image": "https://www.sushiexpress.com.tw/images/Product/3609_s.png",
+        "name": "礦泉水",
+        "name_en": "Mineral Water",
+        "price": "10元"
+    },
+    {
+        "category": "嚴選商品",
+        "image": "https://www.sushiexpress.com.tw/images/Product/3610_s.png",
+        "name": "葡萄醋",
+        "name_en": "Grape Vinegar Drink",
+        "price": "20元"
+    },
+    {
+        "category": "嚴選商品",
+        "image": "https://www.sushiexpress.com.tw/images/Product/3611_s.png",
+        "name": "蘋果醋",
+        "name_en": "Apple Vinegar Drink",
+        "price": "20元"
+    }
+]
