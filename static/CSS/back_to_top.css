@@ -1,0 +1,26 @@
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    display: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #d4af37;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    line-height: 50px;
+    cursor: pointer;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+#back-to-top:hover {
+    background: #e8c46c;
+    transform: scale(1.1);
+}
+
+#back-to-top.show {
+    display: block;
+    opacity: 1;
+}
