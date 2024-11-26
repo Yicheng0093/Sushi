@@ -70,23 +70,31 @@
         <p>Facebook：<a href="https://www.facebook.com/NTUB1917" target="_blank">https://www.facebook.com/NTUB1917</a></p>
       </div>
 
-      <!--顧客建議表單 -->
-      <div class="feedback-form">
-        <h2>顧客建議</h2>
-        <form id="customer-feedback">
-          <label for="name">姓名：</label>
-          <input type="text" id="name" name="name" placeholder="請輸入您的姓名">
-  
-          <label for="email">電子郵件：</label>
-          <input type="email" id="email" name="email" placeholder="請輸入您的電子郵件">
-  
-          <label for="suggestion">建議內容：</label>
-          <textarea id="suggestion" name="suggestion" rows="4" placeholder="請輸入您的建議或反饋"></textarea>
-  
-          <button type="submit">提交建議</button>
-        </form>
-      </div>
-  
+    <!-- 顧客建議表單 -->
+    <div class="feedback-form">
+      <h2>顧客建議</h2>
+      <form id="customer-feedback">
+        <label for="name">姓名：</label>
+        <input type="text" id="name" name="name" placeholder="請輸入您的姓名" required>
+
+        <label for="email">電子郵件：</label>
+        <input type="email" id="email" name="email" placeholder="請輸入您的電子郵件" required>
+
+        <label for="suggestion">建議內容：</label>
+        <textarea id="suggestion" name="suggestion" rows="4" placeholder="請輸入您的建議或反饋" required></textarea>
+
+        <button type="submit">提交建議</button>
+      </form>
+    </div>
+
+    <!-- 浮動視窗 -->
+    <div class="modal-overlay"></div>
+    <div class="modal" id="feedback-success-modal">
+      <h2>感謝您的建議！</h2>
+      <p>您的反饋對我們非常重要，我們將盡快處理。</p>
+      <button id="close-feedback-modal">關閉</button>
+    </div>
+      
       <!-- 一般消費與團體訂購資訊 -->
       <div class="general-info">
         <h2>一般消費與團體訂購</h2>
@@ -106,11 +114,12 @@
   
 
     </div>
-    <p class="footer-center">&copy; 2024 美食天堂。版權所有。</p>
+    <p class="footer-center" id="contact">&copy; 2024 美食天堂。版權所有。</p>
   </footer>
   
 
   <script src="../static/javaScript/backToTop.js"></script>
+  <script src="../static/javaScript/index.js"></script>
 </body>
 
 </html>
