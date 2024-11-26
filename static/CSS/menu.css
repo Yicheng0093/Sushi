@@ -1,0 +1,62 @@
+#menu {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.menu-container {
+  display: grid;
+  padding: 1rem;
+  border-radius: 10px;
+  background: #fdfaf5;
+
+  grid-template-columns: repeat(4, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.menu-item {
+  padding: 1rem;
+  border: 1px solid #d4af37;
+  border-radius: 10px;
+  background: #fff5e4;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.menu-item img {
+  margin-bottom: 10px;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.menu-item h3 {
+  margin: 10px 0;
+  color: #333;
+}
+
+.menu-item p {
+  margin: 5px 0;
+  color: #666;
+}
+
+.menu-item .price {
+  color: #d4af37;
+  font-weight: bold;
+}
+
+.more-info a {
+  display: inline-block;
+  padding: 5px 15px;
+  border: 2px solid #d4af37;
+  border-radius: 5px;
+  color: #d4af37;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.more-info a:hover {
+  background-color: #d4af37;
+  color: #fff;
+}
