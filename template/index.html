@@ -1,164 +1,181 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>餐廳網站</title>
-    <link rel="stylesheet" href="../static/css/indexbody.css" />
-    <link rel="stylesheet" href="../static/css/footer.css" />
-    <link rel="stylesheet" href="../static/css/header.css" />
-    <link rel="stylesheet" href="../static/css/back_to_top.css" />
-  </head>
 
-  <body>
-    <div id="back-to-top">&#8679;</div>
-    <header>
-      <h1>歡迎來到美食天堂</h1>
-      <p>品味幸福的每一刻</p>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>餐廳網站</title>
+  <link rel="stylesheet" href="../static/css/indexbody.css" />
+  <link rel="stylesheet" href="../static/css/footer.css" />
+  <link rel="stylesheet" href="../static/css/header.css" />
+  <link rel="stylesheet" href="../static/css/back_to_top.css" />
+</head>
 
-    <nav>
-      <a href="about.html">關於我們</a>
-      <a href="./menu.html">菜單</a>
-      <a href="reservation.html">訂位</a>
-      <a href="#contact">聯絡我們</a>
-      <a href="talent_recruitment.html">人才招募</a>
-    </nav>
+<body>
+  <div id="back-to-top">&#8679;</div>
+  <header>
+    <h1>歡迎來到美食天堂</h1>
+    <p>品味幸福的每一刻</p>
+  </header>
 
-    <div class="container1">
-      <section class="hero">
-        <h1>美味佳餚，難忘時刻</h1>
-        <p>來享受城中最棒的用餐體驗！</p>
-      </section>
-    </div>
+  <nav>
+    <a href="#about">關於我們</a>
+    <a href="#menu">菜單</a>
+    <a href="#reservationbody">訂位</a>
+    <a href="#talent_recruitment">人才招募</a>
+    <a href="#contact">聯絡我們</a>
+  </nav>
 
-    <div class="container2">
-      <section id="about">
-        <h2>關於我們</h2>
-        <p>
-          在美食天堂，我們將最新鮮的食材與創意食譜結合，為您帶來難忘的用餐體驗。
-        </p>
-        <p>自 2010 年成立以來，我們始終熱愛美食並提供卓越的服務。</p>
-        <div class="more-info">
-          <a href="about.html">點我了解更多....</a>
-        </div>
-      </section>
-    </div>
+  <div class="container1">
+    <section class="hero">
+      <h1>美味佳餚，難忘時刻</h1>
+      <p>來享受城中最棒的用餐體驗！</p>
+    </section>
+  </div>
 
-    <div class="container1">
-      <section id="reservation">
-        <h2>訂位</h2>
-        <form>
-          <label for="name">姓名：</label><br />
-          <input type="text" id="name" name="name" required /><br /><br />
-          <label for="date">日期：</label><br />
-          <input type="date" id="date" name="date" required /><br /><br />
-          <label for="time">時間：</label><br />
-          <input type="time" id="time" name="time" required /><br /><br />
-          <label for="guests">用餐人數：</label><br />
-          <input
-            type="number"
-            id="guests"
-            name="guests"
-            min="1"
-            required
-          /><br /><br />
-          <button type="submit">送出訂位</button>
-        </form>
-      </section>
-    </div>
-
-    <footer>
-      <div class="container">
-        <!-- 聯絡資訊 -->
-        <div class="general-info">
-          <h2>聯絡我們</h2>
-          <hr />
-          <p>地址：100025台北市中正區濟南路一段321號</p>
-          <p>電話：(02)33222777</p>
-          <p>
-            電子郵件：<a href="mailto:info@ntub.edu.tw">info@ntub.edu.tw</a>
-          </p>
-          <p>
-            Facebook：<a
-              href="https://www.facebook.com/NTUB1917"
-              target="_blank"
-              >https://www.facebook.com/NTUB1917</a
-            >
-          </p>
-        </div>
-
-        <!-- 顧客建議表單 -->
-        <div class="feedback-form">
-          <h2>顧客建議</h2>
-          <form id="customer-feedback">
-            <label for="name">姓名：</label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              placeholder="請輸入您的姓名"
-              required
-            />
-
-            <label for="email">電子郵件：</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="請輸入您的電子郵件"
-              required
-            />
-
-            <label for="suggestion">建議內容：</label>
-            <textarea
-              id="suggestion"
-              name="suggestion"
-              rows="4"
-              placeholder="請輸入您的建議或反饋"
-              required
-            ></textarea>
-
-            <button type="submit">提交建議</button>
-          </form>
-        </div>
-
-        <!-- 浮動視窗 -->
-        <div class="modal-overlay"></div>
-        <div class="modal" id="feedback-success-modal">
-          <h2>感謝您的建議！</h2>
-          <p>您的反饋對我們非常重要，我們將盡快處理。</p>
-          <button id="close-feedback-modal">關閉</button>
-        </div>
-
-        <!-- 一般消費與團體訂購資訊 -->
-        <div class="general-info">
-          <h2>一般消費與團體訂購</h2>
-          <hr />
-          <h3>一般消費</h3>
-          <ul>
-            <li>歡迎至各門市選購，或提前電洽門市預購。</li>
-            <li>提供家庭聚餐的便利性。</li>
-          </ul>
-          <h3>各大企業、學校、戶外活動</h3>
-          <ul>
-            <li>聯絡窗口: (02)2760-2200 分機1508</li>
-            <li>
-              Email:
-              <a href="mailto:sushitakeout@sushiexpress.com.tw"
-                >sushitakeout@sushiexpress.com.tw</a
-              >
-            </li>
-            <li>
-              歡迎訂購各式餐盒，敬請提前一個月來電訂購，我們將有專人為您規劃與服務
-            </li>
-          </ul>
-        </div>
+<!-- 關於我們 -->
+<div class="container2">
+  <section id="about" class="content-with-image">
+    <img src="https://www.sushiexpress.com.tw/img/about/about_global.png" alt="關於我們圖片">
+    <div class="text-content">
+      <h2>關於我們</h2>
+      <p>
+        在美食天堂，我們將最新鮮的食材與創意食譜結合，為您帶來難忘的用餐體驗。
+      </p>
+      <p>自 2010 年成立以來，我們始終熱愛美食並提供卓越的服務。</p>
+      <div class="more-info">
+        <a href="about.html">點我了解更多....</a>
       </div>
-      <p class="footer-center" id="contact">&copy; 2024 美食天堂。版權所有。</p>
-    </footer>
+    </div>
+  </section>
+</div>
 
-    <script src="../static/javaScript/backToTop.js"></script>
-    <script src="../static/javaScript/index.js"></script>
-  </body>
+<!-- 菜單 -->
+<div class="container1">
+  <section id="menu" class="content-with-image ">
+    <div class="text-content">
+      <h2>菜單</h2>
+      <p>
+        我們的菜單融合了傳統與創新的口味，滿足各種不同的味蕾需求。
+      </p>
+      <p>
+        每道菜品均由我們經驗豐富的廚師團隊精心製作，確保每一口都讓您難以忘懷。
+      </p>
+      <div class="more-info">
+        <a href="menu.html">點我去看菜單</a>
+      </div>
+    </div>
+    <img src="https://www.sushiexpress.com.tw/img/about/about_magic-touch.png" alt="菜單圖片">
+  </section>
+</div>
+
+<!-- 訂位 -->
+<div class="container2">
+  <section id="reservationbody" class="content-with-image">
+    <img src="https://www.atomic-english.com/wp-content/uploads/2023/12/restaurant-reservation-img.jpg" alt="訂位圖片">
+    <div class="text-content">
+      <h2>訂位</h2>
+      <p>
+        立即預訂您的專屬席位，享受無與倫比的美食體驗！
+      </p>
+      <p>輕鬆的訂位流程讓您的用餐計畫更加便利。</p>
+      <div class="more-info">
+        <a href="reservation.html">點我去訂位</a>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- 人才招募 -->
+<div class="container1">
+  <section id="talent_recruitment" class="content-with-image ">
+    <div class="text-content">
+      <h2>人才招募</h2>
+      <p>
+        如果您對美食充滿熱情並渴望加入一家追求卓越的餐廳，我們熱烈歡迎您的加入！
+      </p>
+      <p>
+        美食天堂提供多樣的職位，並為員工提供良好的工作環境與成長機會。
+      </p>
+      <div class="more-info">
+        <a href="talent_recruitment.html">點我加入我們</a>
+      </div>
+    </div>
+    <img src="https://jyic.net/images/job.png" alt="人才招募圖片">
+  </section>
+</div>
+
+
+
+  <!-- 頁尾 -->
+  <footer>
+    <div class="container">
+      <!-- 聯絡資訊 -->
+      <div class="general-info">
+        <h2>聯絡我們</h2>
+        <hr />
+        <p>地址：100025台北市中正區濟南路一段321號</p>
+        <p>電話：(02)33222777</p>
+        <p>
+          電子郵件：<a href="mailto:info@ntub.edu.tw">info@ntub.edu.tw</a>
+        </p>
+        <p>
+          Facebook：<a href="https://www.facebook.com/NTUB1917" target="_blank">https://www.facebook.com/NTUB1917</a>
+        </p>
+      </div>
+
+      <!-- 顧客建議表單 -->
+      <div class="feedback-form">
+        <h2>顧客建議</h2>
+        <form id="customer-feedback">
+          <label for="name">姓名：</label>
+          <input type="text" id="name" name="name" placeholder="請輸入您的姓名" required />
+
+          <label for="email">電子郵件：</label>
+          <input type="email" id="email" name="email" placeholder="請輸入您的電子郵件" required />
+
+          <label for="suggestion">建議內容：</label>
+          <textarea id="suggestion" name="suggestion" rows="4" placeholder="請輸入您的建議或反饋" required></textarea>
+
+          <button type="submit">提交建議</button>
+        </form>
+      </div>
+
+      <!-- 浮動視窗 -->
+      <div class="modal-overlay"></div>
+      <div class="modal" id="feedback-success-modal">
+        <h2>感謝您的建議！</h2>
+        <p>您的反饋對我們非常重要，我們將盡快處理。</p>
+        <button id="close-feedback-modal">關閉</button>
+      </div>
+
+      <!-- 一般消費與團體訂購資訊 -->
+      <div class="general-info">
+        <h2>一般消費與團體訂購</h2>
+        <hr />
+        <h3>一般消費</h3>
+        <ul>
+          <li>歡迎至各門市選購，或提前電洽門市預購。</li>
+          <li>提供家庭聚餐的便利性。</li>
+        </ul>
+        <h3>各大企業、學校、戶外活動</h3>
+        <ul>
+          <li>聯絡窗口: (02)2760-2200 分機1508</li>
+          <li>
+            Email:
+            <a href="mailto:sushitakeout@sushiexpress.com.tw">sushitakeout@sushiexpress.com.tw</a>
+          </li>
+          <li>
+            歡迎訂購各式餐盒，敬請提前一個月來電訂購，我們將有專人為您規劃與服務
+          </li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer-center" id="contact">&copy; 2024 美食天堂。版權所有。</p>
+  </footer>
+
+  <script src="../static/javaScript/backToTop.js"></script>
+  <script src="../static/javaScript/index.js"></script>
+</body>
+
 </html>

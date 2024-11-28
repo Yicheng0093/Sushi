@@ -1,8 +1,15 @@
-
+body{
+  font-size: large;
+}
+h2{
+  text-align: center;
+  font-style: italic;
+  border-bottom: #f5f0e6;
+}
 section {
   margin: auto;
   padding: 2.5rem;
-  max-width: 800px;
+  max-width: 1200px;
 }
 
 .hero {
@@ -118,9 +125,10 @@ html {
   margin: 0;
   color: #666;
 }
-.more-info
- {
-margin-top: 10px;
+.more-info{
+margin-top: 20px;
+text-align: center;
+
 }
 
 .more-info a {
@@ -139,3 +147,40 @@ background-color: #d4af37;
 color: #fff;
 }
 
+
+
+.content-with-image {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.text-content {
+  flex: 1;
+}
+
+.text-content h2 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+.text-content p {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.text-content .more-info a {
+  color: #007BFF;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.text-content .more-info a:hover {
+  text-decoration: underline;
+}
+
+.content-with-image img {
+  width: 500px;
+  flex-shrink: 0;
+  border-radius: 8px;
+}

@@ -41,7 +41,7 @@ footer {
     border-radius: 10px;
     background-color: #3a3a3a;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    height: 434px;
+    height: 440px;
   }
   
   footer .general-info h2 {
@@ -73,7 +73,7 @@ footer {
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     color: #333;
-    height: 434px;
+    height: 440px;
   }
   
   footer .feedback-form h2 {
