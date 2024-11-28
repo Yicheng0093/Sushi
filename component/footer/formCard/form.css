@@ -1,0 +1,59 @@
+.card {
+  display: flex; /* 使內容支持垂直排列 */
+  flex-direction: column; /* 垂直排列 */
+  padding: 1rem;
+  width: 25rem;
+  height: 100%;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  color: #ffffff;
+}
+
+h3 {
+  margin: 0;
+  color: var(--card-title-color, #d4af37); /* 預設標題顏色 */
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+/* 表單專屬樣式 */
+form {
+    display: flex;
+    flex-direction: column;
+
+    gap: 1rem;
+  }
+
+  label {
+    font-weight: bold;
+  }
+
+  input,
+  textarea {
+    padding: 0.5rem;
+    border: 1px solid var(--card-input-border, #d4af37);
+    border-radius: 5px;
+  }
+
+  input:focus,
+  textarea:focus {
+    outline: none;
+    box-shadow: 0 0 8px rgba(212, 175, 55, 0.5);
+  }
+
+  button {
+    padding: 0.75rem;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--card-button-bg, #d4af37);
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+  }
+
+  .card button:hover {
+    background-color: var(--card-button-hover-bg, #e8c46c);
+    transform: scale(1.05);
+  }

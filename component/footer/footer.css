@@ -1,0 +1,22 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+  background-color: #1f1f1f; /* 整體背景色 */
+  color: #ffffff; /* 文字顏色 */
+}
+
+/* Footer 樣式 */
+.container {
+  display: flex;
+  align-items: stretch; /* 卡片高度自動一致 */
+  justify-content: center;
+  padding: 2rem;
+
+  gap: 2rem; /* 卡片間距 */
+}
+
+.footer-center {
+  padding: 1rem;
+  text-align: center;
+}

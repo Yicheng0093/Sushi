@@ -1,0 +1,43 @@
+/* Card 樣式 */
+.card {
+  display: flex; /* 使內容支持垂直排列 */
+  flex-direction: column; /* 垂直排列 */
+  padding: 1rem;
+  width: 25rem;
+  height: 100%;
+  border-radius: 10px;
+  background-color: #3a3a3a;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  color: #ffffff;
+}
+
+h3 {
+  margin: 0;
+  color: var(--card-title-color, #d4af37); /* 預設標題顏色 */
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+hr {
+  margin: 0 auto;
+  width: 50%;
+  height: 1px;
+  border: 0;
+  background: var(--card-divider-color, #d4af37); /* 分隔線顏色 */
+}
+
+p,
+ul {
+  margin: 0.5rem 0;
+  line-height: 1.6;
+}
+
+a {
+  color: var(--card-link-color, #d4af37);
+  text-decoration: underline;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: var(--card-link-hover-color, #e8c46c);
+}
