@@ -9,8 +9,8 @@ body {
 }
 
 .con {
-    margin-left: 500px;
     margin-right: 500px;
+    margin-left: 500px;
 }
 
 header {
@@ -64,15 +64,15 @@ nav a:hover {
 
 #content_intro {
     flex: 1;
-    max-width: 50%;
     padding-left: 20px;
+    max-width: 50%;
 }
 
 @media (max-width: 1200px) {
     /* 中等螢幕（平板、筆記型電腦） */
     .con {
-        margin-left: 20px;
         margin-right: 20px;
+        margin-left: 20px;
     }
 
     header {
@@ -87,14 +87,14 @@ nav a:hover {
 /* 小螢幕 */
 @media (max-width: 767px) {
     .leftbox {
-        flex-direction: column;
         align-items: center;
+        flex-direction: column;
     }
 
     #img_about_intro,
     #content_intro {
-        max-width: 100%;
         padding-left: 0;
+        max-width: 100%;
     }
 
     header {
@@ -124,13 +124,13 @@ nav a:hover {
 /* 超小螢幕（手機） */
 @media (max-width: 480px) {
     .con {
-        margin-left: 10px;
         margin-right: 10px;
+        margin-left: 10px;
     }
 
     header {
-        font-size: 1.3rem;
         padding: 1rem 0;
+        font-size: 1.3rem;
     }
 
     nav a {
@@ -167,15 +167,15 @@ nav a:hover {
 
 #img_about_intro1 {
     flex: 1;
-    max-width: 50%;
     margin-top: 50px;
+    max-width: 50%;
 }
 
 #content_intro1 {
     flex: 1;
-    max-width: 50%;
-    padding-left: 20px;
     margin-top: 50px;
+    padding-left: 20px;
+    max-width: 50%;
 }
 
 .rightbox img {
@@ -188,14 +188,14 @@ nav a:hover {
 
 @media (max-width: 767px) {
     .rightbox {
-        flex-direction: column;
         align-items: center;
+        flex-direction: column;
     }
 
     .rightbox .col-sm-6 {
-        max-width: 100%;
-        padding-left: 0;
         padding-right: 0;
+        padding-left: 0;
+        max-width: 100%;
     }
 
     .about_content {
@@ -212,8 +212,8 @@ nav a:hover {
 }
 
 .about-us h1 {
-    color: #2c2c2c;
     margin-bottom: 1.5rem;
+    color: #2c2c2c;
 }
 
 .about-us p {

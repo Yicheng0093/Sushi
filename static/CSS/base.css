@@ -1,0 +1,15 @@
+html {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fdfaf5;
+  color: #333;
+  font-family: 'Georgia', serif;
+  line-height: 1.6;
+}
