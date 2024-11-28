@@ -1,10 +1,7 @@
-body{
-  font-size: large;
-}
-h2{
+h2 {
+  border-bottom: #f5f0e6;
   text-align: center;
   font-style: italic;
-  border-bottom: #f5f0e6;
 }
 section {
   margin: auto;
@@ -15,7 +12,8 @@ section {
 .hero {
   padding: 5rem 2rem;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url('https://images.chinatimes.com/newsphoto/2020-07-04/1024/20200704002641.jpg') no-repeat center center/cover;
+    url('https://images.chinatimes.com/newsphoto/2020-07-04/1024/20200704002641.jpg')
+      no-repeat center center/cover;
   color: #fff;
   text-align: center;
 }
@@ -24,23 +22,6 @@ section {
   margin: 0;
   letter-spacing: 0.1rem;
   font-size: 2.5rem;
-}
-
-.menu {
-  display: flex;
-  flex-wrap: wrap;
-
-  gap: 1.5rem;
-}
-
-.menu-item {
-  flex: 1 1 calc(33.333% - 1.5rem);
-  padding: 1.5rem;
-  border: 1px solid #d4af37;
-  border-radius: 10px;
-  background: #fff5e4;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  text-align: center;
 }
 
 .container1 {
@@ -97,61 +78,31 @@ section {
   background: #e8c46c;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
-.menu-item {
-  padding: 10px;
-  border: 1px solid #d4af37;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.more-info {
+  margin-top: 20px;
   text-align: center;
 }
 
-.menu-item img {
-  margin-bottom: 10px;
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-}
-
-.menu-item h3 {
-  margin: 10px 0 5px;
-  color: #333;
-}
-
-.menu-item p {
-  margin: 0;
-  color: #666;
-}
-.more-info{
-margin-top: 20px;
-text-align: center;
-
-}
-
 .more-info a {
-display: inline-block;
-padding: 5px 15px;
-border: 2px solid #d4af37;
-border-radius: 5px;
-color: #d4af37;
-text-decoration: none;
-font-weight: bold;
-transition: all 0.3s ease;
+  display: inline-block;
+  padding: 5px 15px;
+  border: 2px solid #d4af37;
+  border-radius: 5px;
+  color: #d4af37;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
 }
 
 .more-info a:hover {
-background-color: #d4af37;
-color: #fff;
+  background-color: #d4af37;
+  color: #fff;
 }
-
-
 
 .content-with-image {
   display: flex;
   align-items: center;
+
   gap: 20px;
 }
 
@@ -160,8 +111,8 @@ color: #fff;
 }
 
 .text-content h2 {
-  font-size: 1.8em;
   margin-bottom: 10px;
+  font-size: 1.8em;
 }
 
 .text-content p {
@@ -170,7 +121,7 @@ color: #fff;
 }
 
 .text-content .more-info a {
-  color: #007BFF;
+  color: #007bff;
   text-decoration: none;
   font-weight: bold;
 }
@@ -180,7 +131,7 @@ color: #fff;
 }
 
 .content-with-image img {
-  width: 500px;
   flex-shrink: 0;
+  width: 500px;
   border-radius: 8px;
 }

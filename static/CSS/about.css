@@ -1,270 +1,135 @@
 /* 預設樣式 */
-body {
-    margin: 0;
-    padding: 0;
-    background-color: #fdfaf5;
-    color: #333;
-    font-family: 'Georgia', serif;
-    line-height: 1.6;
-}
-
 .con {
-    margin-right: 500px;
-    margin-left: 500px;
-}
-
-header {
-    padding: 1.5rem 0;
-    background: #2c2c2c;
-    color: #d4af37;
-    text-align: center;
-    font-size: 1.8rem;
-}
-
-nav {
-    display: flex;
-    justify-content: center;
-    padding: 1rem 0;
-    background: #1f1f1f;
-}
-
-nav a {
-    margin: 0 1.5rem;
-    color: #d4af37;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.2rem;
+  margin-right: 500px;
+  margin-left: 500px;
 }
 
 nav a:hover {
-    color: #e8c46c;
-    text-decoration: underline;
+  color: #e8c46c;
+  text-decoration: underline;
 }
 
 .section_divider {
-    margin-left: 50px;
+  margin-left: 50px;
 }
 
 /* Flexbox 布局 */
 .leftbox {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 #img_about_intro {
-    flex: 1;
-    max-width: 50%;
+  flex: 1;
+  max-width: 50%;
 }
 
 #img_about_intro img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 #content_intro {
-    flex: 1;
-    padding-left: 20px;
-    max-width: 50%;
-}
-
-@media (max-width: 1200px) {
-    /* 中等螢幕（平板、筆記型電腦） */
-    .con {
-        margin-right: 20px;
-        margin-left: 20px;
-    }
-
-    header {
-        font-size: 1.6rem;
-    }
-
-    nav a {
-        font-size: 1.1rem;
-    }
-}
-
-/* 小螢幕 */
-@media (max-width: 767px) {
-    .leftbox {
-        align-items: center;
-        flex-direction: column;
-    }
-
-    #img_about_intro,
-    #content_intro {
-        padding-left: 0;
-        max-width: 100%;
-    }
-
-    header {
-        font-size: 1.4rem;
-    }
-
-    nav {
-        flex-direction: column;
-        padding: 1rem 0;
-    }
-
-    nav a {
-        margin: 10px 0;
-        font-size: 1.1rem;
-    }
-
-    /* 優化排版 */
-    .section_divider {
-        font-size: 1.4rem;
-    }
-
-    .u1 li {
-        font-size: 1rem;
-    }
-}
-
-/* 超小螢幕（手機） */
-@media (max-width: 480px) {
-    .con {
-        margin-right: 10px;
-        margin-left: 10px;
-    }
-
-    header {
-        padding: 1rem 0;
-        font-size: 1.3rem;
-    }
-
-    nav a {
-        font-size: 1rem;
-    }
-
-    .section_divider {
-        font-size: 1.2rem;
-    }
-
-    .u1 li {
-        font-size: 0.9rem;
-    }
-
-    /* 調整圖片尺寸 */
-    #img_about_intro img,
-    #img_about_intro1 img {
-        width: 100%;
-        height: auto;
-    }
-
-    /* 文字區域的處理 */
-    .about_content {
-        padding-left: 0;
-    }
+  flex: 1;
+  padding-left: 20px;
+  max-width: 50%;
 }
 
 /* 右邊內容區域 */
 .rightbox {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 #img_about_intro1 {
-    flex: 1;
-    margin-top: 50px;
-    max-width: 50%;
+  flex: 1;
+  margin-top: 50px;
+  max-width: 50%;
 }
 
 #content_intro1 {
-    flex: 1;
-    margin-top: 50px;
-    padding-left: 20px;
-    max-width: 50%;
+  flex: 1;
+  margin-top: 50px;
+  padding-left: 20px;
+  max-width: 50%;
 }
 
 .rightbox img {
-    height: auto;
+  height: auto;
 }
 
 .about_content {
-    padding-left: 20px;
-}
-
-@media (max-width: 767px) {
-    .rightbox {
-        align-items: center;
-        flex-direction: column;
-    }
-
-    .rightbox .col-sm-6 {
-        padding-right: 0;
-        padding-left: 0;
-        max-width: 100%;
-    }
-
-    .about_content {
-        padding-left: 0;
-    }
+  padding-left: 20px;
 }
 
 /* .about-us section */
 .about-us {
-    margin: auto;
-    padding: 2.5rem;
-    max-width: 800px;
-    text-align: center;
+  margin: auto;
+  padding: 2.5rem;
+  max-width: 800px;
+  text-align: center;
 }
 
 .about-us h1 {
-    margin-bottom: 1.5rem;
-    color: #2c2c2c;
+  margin-bottom: 1.5rem;
+  color: #2c2c2c;
 }
 
 .about-us p {
-    margin: 1rem 0;
+  margin: 1rem 0;
 }
 
 .about-us .team-photo {
-    margin-top: 1.5rem;
-    max-width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 1.5rem;
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 footer {
-    padding: 2rem;
-    background-color: #2c2c2c;
-    color: #d4af37;
-    text-align: center;
+  padding: 2rem;
+  background-color: #2c2c2c;
+  color: #d4af37;
+  text-align: center;
 }
 
 footer p {
-    margin: 0;
+  margin: 0;
 }
 
 @keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
-.about-us h1, .about-us p, .about-us .team-photo {
-    animation: fadeIn 1s ease-in-out;
+.about-us h1,
+.about-us p,
+.about-us .team-photo {
+  animation: fadeIn 1s ease-in-out;
 }
 
 .u1 {
-    margin-top: 40px;
+  margin-top: 40px;
 }
 
 /* 頁面過渡動畫 */
 @keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
-.about-us h1, .about-us p, .about-us .team-photo {
-    animation: fadeIn 1s ease-in-out;
+.about-us h1,
+.about-us p,
+.about-us .team-photo {
+  animation: fadeIn 1s ease-in-out;
 }

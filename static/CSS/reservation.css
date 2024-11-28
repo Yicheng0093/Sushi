@@ -1,169 +1,192 @@
 .container2 {
-    padding: 2.5rem 0;
-    background: #e6dcd3;
+  padding: 2.5rem 0;
+
+  background: #e6dcd3;
 }
 
 #reservation {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin: 2.5rem auto;
-    padding: 2.5rem;
-    max-width: 600px;
-    border-radius: 15px;
-    background: #fff;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  display: flex;
+
+  align-items: center;
+
+  flex-direction: column;
+
+  margin: 2.5rem auto;
+
+  padding: 2.5rem;
+
+  max-width: 600px;
+
+  border-radius: 15px;
+
+  background: #fff;
+
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
 
 #reservation label {
-    color: #2c2c2c;
-    font-weight: bold;
+  color: #2c2c2c;
+
+  font-weight: bold;
 }
 
 #reservation input,
 #reservation button {
-    padding: 1rem;
-    border: 1px solid #d4af37;
-    border-radius: 8px;
-    font-size: 1.1rem;
+  padding: 1rem;
+
+  border: 1px solid #d4af37;
+
+  border-radius: 8px;
+
+  font-size: 1.1rem;
 }
 
 #reservation input:focus {
-    outline: none;
-    border-color: #d4af37;
-    box-shadow: 0 0 8px rgba(212, 175, 55, 0.5);
+  outline: none;
+
+  border-color: #d4af37;
+
+  box-shadow: 0 0 8px rgba(212, 175, 55, 0.5);
 }
 
 #reservation button {
-    background: #d4af37;
-    color: #2c2c2c;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background 0.3s ease;
+  background: #d4af37;
+
+  color: #2c2c2c;
+
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition: background 0.3s ease;
 }
 
 #reservation button:hover {
-    background: #e8c46c;
-}
-
-#back-to-top {
-    position: fixed;
-    bottom: 20px;
-    left: 20px;
-    display: none;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background: #d4af37;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    color: white;
-    text-align: center;
-    font-size: 24px;
-    line-height: 50px;
-    cursor: pointer;
-    transition: opacity 0.3s ease, transform 0.3s ease;
-}
-
-#back-to-top:hover {
-    background: #e8c46c;
-    transform: scale(1.1);
-}
-
-#back-to-top.show {
-    display: block;
-    opacity: 1;
-}
-
-html {
-    scroll-behavior: smooth;
+  background: #e8c46c;
 }
 
 #location {
-    padding: 1rem;
-    border: 1px solid #d4af37;
-    border-radius: 8px;
-    font-size: 1.1rem;
-    background-color: #fff;
-    color: #333;
-    cursor: pointer;
-    appearance: none; /* 移除預設的下拉箭頭 */
-    -webkit-appearance: none; /* 支援 Safari */
-    -moz-appearance: none; /* 支援 Firefox */
+  padding: 1rem;
+
+  border: 1px solid #d4af37;
+
+  border-radius: 8px;
+
+  background-color: #fff;
+
+  color: #333;
+
+  font-size: 1.1rem;
+
+  cursor: pointer;
+
+  appearance: none; /* 移除預設的下拉箭頭 */
+
+  -webkit-appearance: none; /* 支援 Safari */
+
+  -moz-appearance: none; /* 支援 Firefox */
 }
 
 #location:focus {
-    outline: none;
-    border-color: #d4af37;
-    box-shadow: 0 0 8px rgba(212, 175, 55, 0.5);
+  outline: none;
+
+  border-color: #d4af37;
+
+  box-shadow: 0 0 8px rgba(212, 175, 55, 0.5);
 }
 
 #location option {
-    padding: 10px;
-    font-size: 1rem;
-    background-color: #fff;
-    color: #333;
+  padding: 10px;
+
+  background-color: #fff;
+
+  color: #333;
+
+  font-size: 1rem;
 }
 
 #location option:disabled {
-    color: #aaa;
+  color: #aaa;
 }
 
 .location-container {
-    display: flex;
-    justify-content: space-around;
-    gap: 20px;
-    flex-wrap: wrap;
+  display: flex;
+
+  flex-wrap: wrap;
+
+  justify-content: space-around;
+
+  gap: 20px;
 }
 
 /* 每個門市的卡片樣式 */
 .location-card {
-    border: 1px solid #ccc;
-    padding: 10px;
-    width: 200px;
-    text-align: center;
-    cursor: pointer;
-    transition: transform 0.3s ease;
+  padding: 10px;
+
+  width: 200px;
+
+  border: 1px solid #ccc;
+
+  text-align: center;
+
+  cursor: pointer;
+
+  transition: transform 0.3s ease;
 }
 
 .location-card:hover {
-    transform: scale(1.05); /* 點選卡片放大 */
+  transform: scale(1.05); /* 點選卡片放大 */
 }
 
 /* 圖片樣式 */
 .location-card img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
+  width: 100%;
+
+  height: auto;
+
+  border-radius: 8px;
 }
 
 /* 卡片內文字樣式 */
 .location-card h4 {
-    font-size: 1.2em;
-    margin: 10px 0;
+  margin: 10px 0;
+
+  font-size: 1.2em;
 }
 
 .location-card p {
-    font-size: 0.9em;
-    color: #666;
+  color: #666;
+
+  font-size: 0.9em;
 }
 button {
-    display: block;             /* 讓按鈕變成塊級元素 */
-    margin: 0 auto;             /* 自動左右邊距，達到水平居中 */
-    padding: 10px 20px;         /* 設定按鈕的內邊距 */
-    font-size: 16px;            /* 設定字型大小 */
-    background-color: #4CAF50;  /* 設定背景顏色 */
-    color: white;               /* 設定文字顏色 */
-    border: none;               /* 去掉邊框 */
-    border-radius: 5px;         /* 設定圓角 */
-    cursor: pointer;           /* 滑鼠指針變為手指 */
+  display: block; /* 讓按鈕變成塊級元素 */
+
+  margin: 0 auto; /* 自動左右邊距，達到水平居中 */
+
+  padding: 10px 20px; /* 設定按鈕的內邊距 */
+
+  border: none; /* 去掉邊框 */
+
+  border-radius: 5px; /* 設定圓角 */
+
+  background-color: #4caf50; /* 設定背景顏色 */
+
+  color: white; /* 設定文字顏色 */
+
+  font-size: 16px; /* 設定字型大小 */
+
+  cursor: pointer; /* 滑鼠指針變為手指 */
 }
 
 button:hover {
-    background-color: #45a049;  /* 當滑鼠懸停時，改變背景顏色 */
+  background-color: #45a049; /* 當滑鼠懸停時，改變背景顏色 */
 }
 
 #selected-location {
-    text-align: center; /* 文字水平置中 */
-    margin: 0 auto;     /* 元素本身水平居中 */
-    display: block;     /* 使元素成為塊級元素 */
+  display: block; /* 使元素成為塊級元素 */
+
+  margin: 0 auto; /* 元素本身水平居中 */
+
+  text-align: center; /* 文字水平置中 */
 }

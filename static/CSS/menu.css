@@ -8,14 +8,12 @@
   margin: auto;
   padding: 2.5rem;
   max-width: 800px;
-
 }
 
 /* 內容的容器會推動 footer */
 .content {
   flex: 1; /* 擴展內容區域，將 footer 推到底部 */
 }
-
 
 .menu-container {
   display: grid;
