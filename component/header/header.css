@@ -1,6 +1,6 @@
 header {
   padding: 1rem 0 0 0;
-  background: #2c2c2c;
+  background:radial-gradient(circle,  #333 0%,#444 20%,#555 40%,#999 100%); 
   color: #d4af37;
   text-align: center;
   font-size: 1.8rem;

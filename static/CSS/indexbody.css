@@ -26,13 +26,14 @@ section {
 
 .container1 {
   padding: 2.5rem 0;
-  background: #f5f0e6;
+  background: radial-gradient(circle,#ffffff 0%,#f5f0e6 50%,#e6dcd3 100%);
 }
 
 .container2 {
   padding: 2.5rem 0;
-  background: #e6dcd3;
+  background: linear-gradient(to bottom right,#ffffff 0%,#e6dcd3 100%,#f5f0e6 50%);
 }
+
 
 /* 表單 */
 #reservation {
