@@ -133,3 +133,42 @@ footer p {
 .about-us .team-photo {
   animation: fadeIn 1s ease-in-out;
 }
+
+table {
+  width: 20%;
+  border-collapse: collapse;
+  margin: 0 auto;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 50px;
+}
+caption {
+  caption-side: top;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 10px;
+  color: #333;
+}
+thead {
+  background-color: #007bff;
+  color: #ffffff;
+  
+}
+th, td {
+  text-align: left;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+tbody tr:hover {
+  background-color: #e9f5ff;
+}
+th {
+  font-size: 1.1rem;
+}
+td {
+  font-size: 1rem;
+}
