@@ -59,3 +59,40 @@ function previousStep(step) {
 function resetReservation() {
     window.location.href = 'reservation.html'; // 跳轉到首頁
 }
+
+function setDateRestrictions() {
+    const dateInput = document.getElementById('date');
+  
+    // 獲取今天的日期並加1天
+    const today = new Date();
+    today.setDate(today.getDate() + 1);  // 明天
+  
+    // 格式化為 yyyy-mm-dd 格式
+    const tomorrow = today.toISOString().split('T')[0];
+  
+    // 設定日期最小值為明天
+    dateInput.setAttribute('min', tomorrow);
+}
+
+// 設定時間限制與檢查
+function setTimeRestrictions() {
+    const timeInput = document.getElementById('time');
+  
+    // 當時間變更時檢查是否在 11:00 到 22:00 範圍內
+    timeInput.addEventListener('input', function() {
+        var time = this.value;
+        if (time < '11:00' || time > '22:00') {
+            alert('請選擇 11:00 到 22:00 之間的時間');
+            this.value = ''; // 清除不符合的時間
+        }
+    });
+  
+    // 設定時間預設值（可選）
+    timeInput.value = '11:00';  // 預設時間
+}
+
+// 當頁面加載完成後，設定日期和時間的限制
+window.onload = function() {
+    setDateRestrictions();
+    setTimeRestrictions();
+};

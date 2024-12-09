@@ -178,6 +178,8 @@ button {
 
   cursor: pointer; /* 滑鼠指針變為手指 */
 
+  width: 80%;
+
 }
 
 button:hover {
