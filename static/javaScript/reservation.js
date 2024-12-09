@@ -41,11 +41,9 @@ function submitReservation() {
     if (date && time && name && phone) {
         // 顯示訂位成功的提示框
         alert('訂位成功！');
-        
-        // 等待 2 秒後跳轉回首頁
-        setTimeout(function() {
-            window.location.href = 'index.html'; // 跳轉到首頁
-        }, 2000); // 設定 2 秒延遲
+
+        window.location.href = 'reservation.html'; // 跳轉到首頁
+
     } else {
         alert('請完成所有欄位的填寫！');
     }
