@@ -190,3 +190,16 @@ button:hover {
 
   text-align: center; /* 文字水平置中 */
 }
+
+.button-container {
+  display: flex;
+  justify-content: space-between; /* 按鈕兩端對齊 */
+  gap: 10px; /* 按鈕之間的間距 */
+}
+
+.button-container button {
+  flex: 1; /* 讓按鈕均分寬度 */
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}

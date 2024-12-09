@@ -50,3 +50,10 @@ function submitReservation() {
         alert('請完成所有欄位的填寫！');
     }
 }
+
+function previousStep(step) {
+    // 隱藏當前步驟
+    document.getElementById(`step${step}`).style.display = 'none';
+    // 顯示前一步驟
+    document.getElementById(`step${step - 1}`).style.display = 'block';
+}
