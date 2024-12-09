@@ -174,9 +174,10 @@ button {
 
   color: white; /* 設定文字顏色 */
 
-  font-size: 16px; /* 設定字型大小 */
+  font-size: 10px; /* 設定字型大小 */
 
   cursor: pointer; /* 滑鼠指針變為手指 */
+
 }
 
 button:hover {
@@ -194,12 +195,19 @@ button:hover {
 .button-container {
   display: flex;
   justify-content: space-between; /* 按鈕兩端對齊 */
-  gap: 10px; /* 按鈕之間的間距 */
+  gap: 5px; /* 按鈕之間的間距 */
 }
 
-.button-container button {
-  flex: 1; /* 讓按鈕均分寬度 */
-  padding: 10px;
-  font-size: 16px;
-  cursor: pointer;
+#step2 {
+  display: none;
+  width: 70%; /* 使其寬度佔滿父容器的寬度 */
+  max-width: 800px; /* 設定最大寬度，避免過寬 */
+  margin: 0 auto; /* 讓容器居中 */
+}
+
+#step3 {
+  display: none;
+  width: 70%; /* 使其寬度佔滿父容器的寬度 */
+  max-width: 800px; /* 設定最大寬度，避免過寬 */
+  margin: 0 auto; /* 讓容器居中 */
 }

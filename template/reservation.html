@@ -71,8 +71,11 @@
               <p>地址：台北市大安區忠孝東路456號</p>
             </div>
           </div>
-          <br />
-          <button onclick="nextStep(2)">下一步</button>
+          <br/>
+          <div class="button-container">
+            <button onclick="resetReservation()">重置</button>
+            <button onclick="nextStep(2)">下一步</button>
+          </div>
           <p id="selected-location">尚未選擇門市。</p>
           <!-- 顯示選擇的門市 -->
         </div>
@@ -91,6 +94,7 @@
           <input type="number" id="dining-hour" name="dining-hour" min="1" required /><br /><br />
           <div class="button-container">
             <button onclick="previousStep(2)">上一步</button>
+            <button onclick="resetReservation()">重置</button>
             <button onclick="nextStep(3)">下一步</button>
           </div>
       </div>
@@ -103,6 +107,7 @@
           <input type="tel" id="phone" name="phone" required /><br /><br />
           <div class="button-container">
             <button onclick="previousStep(3)">上一步</button>
+            <button onclick="resetReservation()">重置</button>
             <button onclick="submitReservation()">提交訂位</button>
           </div>
         </div>

@@ -55,3 +55,7 @@ function previousStep(step) {
     // 顯示前一步驟
     document.getElementById(`step${step - 1}`).style.display = 'block';
 }
+
+function resetReservation() {
+    window.location.href = 'reservation.html'; // 跳轉到首頁
+}
